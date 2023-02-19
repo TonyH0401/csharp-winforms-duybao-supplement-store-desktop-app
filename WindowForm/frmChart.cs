@@ -66,7 +66,7 @@ namespace Finals_Project
             this.chart1.Series[seriesName1].Sort(System.Windows.Forms.DataVisualization.Charting.PointSortOrder.Ascending);
             this.chart1.Series[seriesName2].Sort(System.Windows.Forms.DataVisualization.Charting.PointSortOrder.Ascending);
 
-            this.Text = frmName + " bar chart";
+            this.Text = "Time: " + frmName + " bar chart";
         }
 
     }
