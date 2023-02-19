@@ -1,9 +1,12 @@
-﻿using System;
+﻿using CsvHelper;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using System.Text;
@@ -195,9 +198,167 @@ namespace Finals_Project
             }
         }
 
-        private void csvExportToolStripMenuItem_Click(object sender, EventArgs e)
+        private DataTable getDataTable(String sqlcmd)
         {
+            try
+            {
+                SqlConnection conn = new SqlConnection(Program.strConn);
+                conn.Open();
+                String sSQL = sqlcmd;
+                SqlCommand cmd = new SqlCommand(sSQL, conn);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                if (dt.Rows.Count > 0)
+                {
+                    return dt;
+                }
+                else
+                {
+                    MessageBox.Show("No data to return!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            return new DataTable();
+        }
 
+        public List<Store> convertDataTableToListStore(DataTable datatable)
+        {
+            List<Store> result = new List<Store>();
+            foreach (DataRow row in datatable.Rows)
+            {
+                String id = row[0].ToString();
+                String name = row[1].ToString();
+                String location = row[2].ToString();
+                String tax = row[3].ToString();
+                result.Add(new Store(id, name, location, tax));
+            }
+            return result;
+        }
+
+        private void storeToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            String str = "select * from Store";
+            var records = convertDataTableToListStore(getDataTable(str));
+            using (SaveFileDialog sfd = new SaveFileDialog()
+            {
+                Filter = "CSV|*.csv",
+                ValidateNames = true,
+            })
+            {
+                sfd.FileName = "Store List";
+                if (sfd.ShowDialog() == DialogResult.OK)
+                {
+                    using (var sw = new StreamWriter(sfd.FileName))
+                    {
+                        using (var csv = new CsvWriter(sw, CultureInfo.InvariantCulture))
+                        {
+                            csv.WriteRecords(records);
+                        }
+                    }
+                    MessageBox.Show("Store list was Saved", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+        }
+
+        public List<Product> convertDataTableToListProduct(DataTable datatable)
+        {
+            List<Product> result = new List<Product>();
+            foreach (DataRow row in datatable.Rows)
+            {
+                Product product = new Product();
+                product.id = row[0].ToString();
+                product.name = row[1].ToString();
+                product.price = row[2].ToString();
+                product.quantity = row[3].ToString();
+                product.origin = row[4].ToString();
+                result.Add(product);
+            }
+            return result;
+        }
+
+        private void productToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            String str = "select * from Product";
+            var records = convertDataTableToListProduct(getDataTable(str));
+            using (SaveFileDialog sfd = new SaveFileDialog()
+            {
+                Filter = "CSV|*.csv",
+                ValidateNames = true,
+            })
+            {
+                sfd.FileName = "Product List";
+                if (sfd.ShowDialog() == DialogResult.OK)
+                {
+                    using (var sw = new StreamWriter(sfd.FileName))
+                    {
+                        using (var csv = new CsvWriter(sw, CultureInfo.InvariantCulture))
+                        {
+                            csv.WriteRecords(records);
+                        }
+                    }
+                    MessageBox.Show("Product List was Saved", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+        }
+
+        public List<Account> convertDataTableToListAccount(DataTable datatable)
+        {
+            List<Account> result = new List<Account>();
+            foreach (DataRow row in datatable.Rows)
+            {
+                String id = row[0].ToString();
+                String fname = row[2].ToString();
+                String lname = row[3].ToString();
+                String email = row[4].ToString();
+                String phone = row[5].ToString();
+                String address = row[6].ToString();
+                result.Add(new Account(id, fname, lname, email, phone, address));
+            }
+            return result;
+        }
+
+        private void accountToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            String sessionID = Program.sessionAccount;
+            if(sessionID == null)
+            {
+                MessageBox.Show("Error! Please reload!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if(sessionID.Equals("admin") == true || sessionID.Contains("ACCT") == true || sessionID.Contains("STRMNGR") == true) 
+            {
+                String str = "select * from Account";
+                var records = convertDataTableToListAccount(getDataTable(str));
+                using (SaveFileDialog sfd = new SaveFileDialog()
+                {
+                    Filter = "CSV|*.csv",
+                    ValidateNames = true,
+                })
+                {
+                    sfd.FileName = "Account List";
+                    if (sfd.ShowDialog() == DialogResult.OK)
+                    {
+                        using (var sw = new StreamWriter(sfd.FileName))
+                        {
+                            using (var csv = new CsvWriter(sw, CultureInfo.InvariantCulture))
+                            {
+                                csv.WriteRecords(records);
+                            }
+                        }
+                        MessageBox.Show("Account List was Saved", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("You are not allowed to do that!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+           
         }
     }
 }

@@ -21,7 +21,7 @@ namespace Finals_Project
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMStore());
+            Application.Run(new frmMain());
         }
     }
 }

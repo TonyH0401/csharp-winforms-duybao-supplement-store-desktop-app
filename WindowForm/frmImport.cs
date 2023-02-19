@@ -185,32 +185,36 @@ namespace Finals_Project
             else
             {
                 String temp = listBoxImportID.Items[listBoxImportID.SelectedIndex].ToString();
-                //TO DO delete
-                //try
-                //{
-                //    SqlConnection conn = new SqlConnection(Program.strConn);
-                //    conn.Open();
+                DialogResult dr = MessageBox.Show("Do you want to delete: " + temp + " ?", "Quesntion", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if(dr == DialogResult.Yes)
+                {
+                    //TO DO delete
+                    //try
+                    //{
+                    //    SqlConnection conn = new SqlConnection(Program.strConn);
+                    //    conn.Open();
 
-                //    String sSQL = "delete from ";
-                //    SqlCommand cmd = new SqlCommand(sSQL, conn);
-                //    cmd.Parameters.AddWithValue("")
+                    //    String sSQL = "delete from ";
+                    //    SqlCommand cmd = new SqlCommand(sSQL, conn);
+                    //    cmd.Parameters.AddWithValue("")
 
-                //    int i = cmd.ExecuteNonQuery();
-                //    if (i != 0)
-                //    {
-                //        //MessageBox.Show("Saved");
-                //    }
-                //    else
-                //    {
-                //        MessageBox.Show("Error");
-                //    }
-                //    conn.Close();
-                //}
-                //catch (Exception ex)
-                //{
+                    //    int i = cmd.ExecuteNonQuery();
+                    //    if (i != 0)
+                    //    {
+                    //        //MessageBox.Show("Saved");
+                    //    }
+                    //    else
+                    //    {
+                    //        MessageBox.Show("Error");
+                    //    }
+                    //    conn.Close();
+                    //}
+                    //catch (Exception ex)
+                    //{
 
-                //}
-                MessageBox.Show(temp);
+                    //}
+                    MessageBox.Show(temp);
+                }
             }
         }
         private void btnNewImport_Click(object sender, EventArgs e)

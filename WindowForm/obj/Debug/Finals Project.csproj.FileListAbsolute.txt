@@ -232,3 +232,19 @@ D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\obj
 D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\obj\Debug\Finals Project.pdb
 D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\obj\Debug\Finals_Project.frmMProduct.resources
 D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\obj\Debug\Finals_Project.frmMStore.resources
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\CsvHelper.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\Microsoft.Bcl.HashCode.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\System.Buffers.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\System.Memory.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\System.Numerics.Vectors.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\CsvHelper.xml
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\Microsoft.Bcl.HashCode.xml
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\System.Buffers.xml
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\System.Memory.xml
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\System.Numerics.Vectors.xml
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\System.Threading.Tasks.Extensions.xml

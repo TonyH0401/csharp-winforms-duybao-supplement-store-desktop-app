@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnFind = new System.Windows.Forms.Button();
+            this.dateTimePickerImportExportBill = new System.Windows.Forms.DateTimePicker();
+            this.lblSelectTime = new System.Windows.Forms.Label();
+            this.dateTimePickerCurrentTime = new System.Windows.Forms.DateTimePicker();
+            this.lblCurrentTime = new System.Windows.Forms.Label();
             this.dataGridViewImport = new System.Windows.Forms.DataGridView();
             this.dataGridViewExport = new System.Windows.Forms.DataGridView();
-            this.dateTimePickerImportExportBill = new System.Windows.Forms.DateTimePicker();
-            this.btnFind = new System.Windows.Forms.Button();
-            this.lblCurrentTime = new System.Windows.Forms.Label();
-            this.dateTimePickerCurrentTime = new System.Windows.Forms.DateTimePicker();
-            this.lblSelectTime = new System.Windows.Forms.Label();
             this.lblImport = new System.Windows.Forms.Label();
             this.lblExport = new System.Windows.Forms.Label();
             this.lblImportValue = new System.Windows.Forms.Label();
@@ -48,6 +48,7 @@
             this.lblTopImport = new System.Windows.Forms.Label();
             this.lblTopExport = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnVisualize = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewImport)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewExport)).BeginInit();
@@ -59,6 +60,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.panel1.Controls.Add(this.btnVisualize);
             this.panel1.Controls.Add(this.btnFind);
             this.panel1.Controls.Add(this.dateTimePickerImportExportBill);
             this.panel1.Controls.Add(this.lblSelectTime);
@@ -68,6 +70,52 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(311, 111);
             this.panel1.TabIndex = 0;
+            // 
+            // btnFind
+            // 
+            this.btnFind.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFind.Location = new System.Drawing.Point(15, 75);
+            this.btnFind.Name = "btnFind";
+            this.btnFind.Size = new System.Drawing.Size(75, 23);
+            this.btnFind.TabIndex = 4;
+            this.btnFind.Text = "&Find";
+            this.btnFind.UseVisualStyleBackColor = true;
+            this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
+            // 
+            // dateTimePickerImportExportBill
+            // 
+            this.dateTimePickerImportExportBill.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePickerImportExportBill.Location = new System.Drawing.Point(101, 46);
+            this.dateTimePickerImportExportBill.Name = "dateTimePickerImportExportBill";
+            this.dateTimePickerImportExportBill.Size = new System.Drawing.Size(105, 20);
+            this.dateTimePickerImportExportBill.TabIndex = 3;
+            // 
+            // lblSelectTime
+            // 
+            this.lblSelectTime.AutoSize = true;
+            this.lblSelectTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSelectTime.Location = new System.Drawing.Point(12, 48);
+            this.lblSelectTime.Name = "lblSelectTime";
+            this.lblSelectTime.Size = new System.Drawing.Size(78, 13);
+            this.lblSelectTime.TabIndex = 7;
+            this.lblSelectTime.Text = "Select Time:";
+            // 
+            // dateTimePickerCurrentTime
+            // 
+            this.dateTimePickerCurrentTime.Location = new System.Drawing.Point(101, 13);
+            this.dateTimePickerCurrentTime.Name = "dateTimePickerCurrentTime";
+            this.dateTimePickerCurrentTime.Size = new System.Drawing.Size(201, 20);
+            this.dateTimePickerCurrentTime.TabIndex = 6;
+            // 
+            // lblCurrentTime
+            // 
+            this.lblCurrentTime.AutoSize = true;
+            this.lblCurrentTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCurrentTime.Location = new System.Drawing.Point(12, 16);
+            this.lblCurrentTime.Name = "lblCurrentTime";
+            this.lblCurrentTime.Size = new System.Drawing.Size(83, 13);
+            this.lblCurrentTime.TabIndex = 5;
+            this.lblCurrentTime.Text = "Current Time:";
             // 
             // dataGridViewImport
             // 
@@ -92,52 +140,6 @@
             this.dataGridViewExport.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewExport.Size = new System.Drawing.Size(382, 150);
             this.dataGridViewExport.TabIndex = 2;
-            // 
-            // dateTimePickerImportExportBill
-            // 
-            this.dateTimePickerImportExportBill.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePickerImportExportBill.Location = new System.Drawing.Point(101, 46);
-            this.dateTimePickerImportExportBill.Name = "dateTimePickerImportExportBill";
-            this.dateTimePickerImportExportBill.Size = new System.Drawing.Size(105, 20);
-            this.dateTimePickerImportExportBill.TabIndex = 3;
-            // 
-            // btnFind
-            // 
-            this.btnFind.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFind.Location = new System.Drawing.Point(15, 75);
-            this.btnFind.Name = "btnFind";
-            this.btnFind.Size = new System.Drawing.Size(75, 23);
-            this.btnFind.TabIndex = 4;
-            this.btnFind.Text = "&Find";
-            this.btnFind.UseVisualStyleBackColor = true;
-            this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
-            // 
-            // lblCurrentTime
-            // 
-            this.lblCurrentTime.AutoSize = true;
-            this.lblCurrentTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCurrentTime.Location = new System.Drawing.Point(12, 16);
-            this.lblCurrentTime.Name = "lblCurrentTime";
-            this.lblCurrentTime.Size = new System.Drawing.Size(83, 13);
-            this.lblCurrentTime.TabIndex = 5;
-            this.lblCurrentTime.Text = "Current Time:";
-            // 
-            // dateTimePickerCurrentTime
-            // 
-            this.dateTimePickerCurrentTime.Location = new System.Drawing.Point(101, 13);
-            this.dateTimePickerCurrentTime.Name = "dateTimePickerCurrentTime";
-            this.dateTimePickerCurrentTime.Size = new System.Drawing.Size(201, 20);
-            this.dateTimePickerCurrentTime.TabIndex = 6;
-            // 
-            // lblSelectTime
-            // 
-            this.lblSelectTime.AutoSize = true;
-            this.lblSelectTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSelectTime.Location = new System.Drawing.Point(12, 48);
-            this.lblSelectTime.Name = "lblSelectTime";
-            this.lblSelectTime.Size = new System.Drawing.Size(78, 13);
-            this.lblSelectTime.TabIndex = 7;
-            this.lblSelectTime.Text = "Select Time:";
             // 
             // lblImport
             // 
@@ -266,6 +268,17 @@
             this.panel2.Size = new System.Drawing.Size(464, 193);
             this.panel2.TabIndex = 14;
             // 
+            // btnVisualize
+            // 
+            this.btnVisualize.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVisualize.Location = new System.Drawing.Point(219, 75);
+            this.btnVisualize.Name = "btnVisualize";
+            this.btnVisualize.Size = new System.Drawing.Size(75, 23);
+            this.btnVisualize.TabIndex = 8;
+            this.btnVisualize.Text = "&Visualize";
+            this.btnVisualize.UseVisualStyleBackColor = true;
+            this.btnVisualize.Click += new System.EventHandler(this.btnVisualize_Click);
+            // 
             // frmStatistic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -323,5 +336,6 @@
         private System.Windows.Forms.Label lblTopImport;
         private System.Windows.Forms.Label lblTopExport;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btnVisualize;
     }
 }

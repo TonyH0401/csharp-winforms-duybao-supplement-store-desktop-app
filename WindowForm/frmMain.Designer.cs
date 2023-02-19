@@ -360,30 +360,32 @@
             // 
             this.csvExportToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.productToolStripMenuItem1,
-            this.accountToolStripMenuItem,
-            this.storeToolStripMenuItem1});
+            this.storeToolStripMenuItem1,
+            this.accountToolStripMenuItem});
             this.csvExportToolStripMenuItem.Name = "csvExportToolStripMenuItem";
             this.csvExportToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.csvExportToolStripMenuItem.Text = "CSV Export";
-            this.csvExportToolStripMenuItem.Click += new System.EventHandler(this.csvExportToolStripMenuItem_Click);
             // 
             // productToolStripMenuItem1
             // 
             this.productToolStripMenuItem1.Name = "productToolStripMenuItem1";
             this.productToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.productToolStripMenuItem1.Text = "Product";
+            this.productToolStripMenuItem1.Click += new System.EventHandler(this.productToolStripMenuItem1_Click);
             // 
             // accountToolStripMenuItem
             // 
             this.accountToolStripMenuItem.Name = "accountToolStripMenuItem";
             this.accountToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.accountToolStripMenuItem.Text = "Account";
+            this.accountToolStripMenuItem.Click += new System.EventHandler(this.accountToolStripMenuItem_Click);
             // 
             // storeToolStripMenuItem1
             // 
             this.storeToolStripMenuItem1.Name = "storeToolStripMenuItem1";
             this.storeToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.storeToolStripMenuItem1.Text = "Store";
+            this.storeToolStripMenuItem1.Click += new System.EventHandler(this.storeToolStripMenuItem1_Click);
             // 
             // frmMain
             // 

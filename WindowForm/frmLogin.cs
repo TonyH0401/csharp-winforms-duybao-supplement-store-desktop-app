@@ -50,7 +50,7 @@ namespace Finals_Project
                 {
                     String sessionACCT = (String)dt.Rows[0][0];
                     Program.sessionAccount = sessionACCT;
-                    MessageBox.Show("Login Successful! Welcome", "SUCCESSFUL LOGIN", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                    MessageBox.Show("Login Successful! Welcome!", "SUCCESSFUL LOGIN", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                     this.Close();
                 }
                 else
