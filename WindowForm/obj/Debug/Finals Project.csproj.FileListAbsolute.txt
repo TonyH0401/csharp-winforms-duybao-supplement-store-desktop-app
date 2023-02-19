@@ -1,0 +1,232 @@
+D:\TDTU\CNPM\Finals Project\bin\Debug\Finals Project.exe.config
+D:\TDTU\CNPM\Finals Project\bin\Debug\Finals Project.exe
+D:\TDTU\CNPM\Finals Project\bin\Debug\Finals Project.pdb
+D:\TDTU\CNPM\Finals Project\obj\Debug\Finals Project.csproj.AssemblyReference.cache
+D:\TDTU\CNPM\Finals Project\obj\Debug\Finals Project.csproj.SuggestedBindingRedirects.cache
+D:\TDTU\CNPM\Finals Project\obj\Debug\Finals_Project.Properties.Resources.resources
+D:\TDTU\CNPM\Finals Project\obj\Debug\Finals Project.csproj.GenerateResource.cache
+D:\TDTU\CNPM\Finals Project\obj\Debug\Finals Project.csproj.CoreCompileInputs.cache
+D:\TDTU\CNPM\Finals Project\obj\Debug\Finals Project.exe
+D:\TDTU\CNPM\Finals Project\obj\Debug\Finals Project.pdb
+D:\TDTU\CNPM\Finals Project\obj\Debug\Finals_Project.frmLogin.resources
+D:\TDTU\CNPM\Finals Project\obj\Debug\Finals_Project.frmMain.resources
+D:\TDTU\CNPM\Finals Project\obj\Debug\Finals_Project.frmAddProductExport.resources
+D:\TDTU\CNPM\Finals Project\obj\Debug\Finals_Project.frmCreateImport.resources
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\Finals Project.exe.config
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\Finals Project.exe
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\Finals Project.pdb
+D:\1.TDTU\2.CNPM\Finals Project\obj\Debug\Finals Project.csproj.AssemblyReference.cache
+D:\1.TDTU\2.CNPM\Finals Project\obj\Debug\Finals Project.csproj.SuggestedBindingRedirects.cache
+D:\1.TDTU\2.CNPM\Finals Project\obj\Debug\Finals_Project.frmAddProductExport.resources
+D:\1.TDTU\2.CNPM\Finals Project\obj\Debug\Finals_Project.frmCreateImport.resources
+D:\1.TDTU\2.CNPM\Finals Project\obj\Debug\Finals_Project.frmLogin.resources
+D:\1.TDTU\2.CNPM\Finals Project\obj\Debug\Finals_Project.frmMain.resources
+D:\1.TDTU\2.CNPM\Finals Project\obj\Debug\Finals_Project.Properties.Resources.resources
+D:\1.TDTU\2.CNPM\Finals Project\obj\Debug\Finals Project.csproj.GenerateResource.cache
+D:\1.TDTU\2.CNPM\Finals Project\obj\Debug\Finals Project.csproj.CoreCompileInputs.cache
+D:\1.TDTU\2.CNPM\Finals Project\obj\Debug\Finals Project.exe
+D:\1.TDTU\2.CNPM\Finals Project\obj\Debug\Finals Project.pdb
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\Microsoft.ReportViewer.Design.dll
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\EnvDTE.dll
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\stdole.dll
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\obj\Debug\Finals_Project.frmImport.resources
+D:\1.TDTU\2.CNPM\Finals Project\obj\Debug\Finals Project.csproj.CopyComplete
+D:\1.TDTU\2.CNPM\Finals Project\obj\Debug\Finals_Project.frmPrint.resources
+D:\1.TDTU\2.CNPM\Finals Project\obj\Debug\Finals_Project.frmExport.resources
+D:\1.TDTU\2.CNPM\Finals Project\obj\Debug\Finals_Project.frmPrintExport.resources
+D:\1.TDTU\2.CNPM\Finals Project\obj\Debug\Finals_Project.frmStatistic.resources
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\Finals Project.exe.config
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\Finals Project.exe
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\Finals Project.pdb
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\Microsoft.ReportViewer.Design.dll
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\EnvDTE.dll
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\stdole.dll
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\obj\Debug\Finals Project.csproj.AssemblyReference.cache
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\obj\Debug\Finals Project.csproj.SuggestedBindingRedirects.cache
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\obj\Debug\Finals_Project.frmAddProductExport.resources
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\obj\Debug\Finals_Project.frmCreateImport.resources
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\obj\Debug\Finals_Project.frmExport.resources
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\obj\Debug\Finals_Project.frmImport.resources
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\obj\Debug\Finals_Project.frmLogin.resources
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\obj\Debug\Finals_Project.frmMain.resources
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\obj\Debug\Finals_Project.frmPrint.resources
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\obj\Debug\Finals_Project.frmPrintExport.resources
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\obj\Debug\Finals_Project.frmStatistic.resources
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\obj\Debug\Finals_Project.Properties.Resources.resources
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\obj\Debug\Finals Project.csproj.GenerateResource.cache
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\obj\Debug\Finals Project.csproj.CoreCompileInputs.cache
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\obj\Debug\Finals Project.csproj.CopyComplete
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\obj\Debug\Finals Project.exe
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\obj\Debug\Finals Project.pdb
+D:\1.TDTU\2.CNPM\Finals Project\WindowForm\obj\Debug\Finals_Project.frmProduct.resources
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\Finals Project.exe.config
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\Finals Project.exe
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\Finals Project.pdb
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\Microsoft.ReportViewer.Design.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\EnvDTE.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\stdole.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\obj\Debug\Finals Project.csproj.AssemblyReference.cache
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\obj\Debug\Finals Project.csproj.SuggestedBindingRedirects.cache
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\obj\Debug\Finals_Project.frmAddProductExport.resources
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\obj\Debug\Finals_Project.frmCreateImport.resources
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\obj\Debug\Finals_Project.frmExport.resources
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\obj\Debug\Finals_Project.frmImport.resources
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\obj\Debug\Finals_Project.frmLogin.resources
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\obj\Debug\Finals_Project.frmMain.resources
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\obj\Debug\Finals_Project.frmPrint.resources
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\obj\Debug\Finals_Project.frmPrintExport.resources
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\obj\Debug\Finals_Project.frmProduct.resources
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\obj\Debug\Finals_Project.frmStatistic.resources
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\obj\Debug\Finals_Project.Properties.Resources.resources
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\obj\Debug\Finals Project.csproj.GenerateResource.cache
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\obj\Debug\Finals Project.csproj.CoreCompileInputs.cache
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\obj\Debug\Finals Project.csproj.CopyComplete
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\obj\Debug\Finals Project.exe
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\obj\Debug\Finals Project.pdb

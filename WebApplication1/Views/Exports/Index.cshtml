@@ -1,0 +1,75 @@
+﻿@model IEnumerable<WebApplication1.Models.Export>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.exportID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.exportTotalProduct)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.exportTotalPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.exportCreated)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.exportStatus)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Account.accountID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PaymentMethod.paymentName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Store.storeName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.exportID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.exportTotalProduct)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.exportTotalPrice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.exportCreated)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.exportStatus)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Account.accountID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PaymentMethod.paymentName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Store.storeName)
+        </td>
+        <td>
+            @*@Html.ActionLink("Edit", "Edit", new { id=item.exportID }) |*@
+            @Html.ActionLink("Details", "Details", new { id = item.exportID }) |
+            @*@Html.ActionLink("Delete", "Delete", new { id=item.exportID })*@
+        </td>
+    </tr>
+}
+
+</table>

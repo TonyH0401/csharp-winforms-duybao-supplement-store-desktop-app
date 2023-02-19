@@ -1,0 +1,595 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="CNPM_final_projectModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Account">
+          <Key>
+            <PropertyRef Name="accountID" />
+          </Key>
+          <Property Name="accountID" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="accountPassword" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="accountFirstName" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="accountLastName" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="accountEmail" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="accountPhone" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="accountAddress" Type="nvarchar" MaxLength="255" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Export">
+          <Key>
+            <PropertyRef Name="exportID" />
+          </Key>
+          <Property Name="exportID" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="exportTotalProduct" Type="int" />
+          <Property Name="exportTotalPrice" Type="nvarchar" MaxLength="255" />
+          <Property Name="exportCreated" Type="date" />
+          <Property Name="exportStatus" Type="int" />
+          <Property Name="accountID" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="paymentID" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="storeID" Type="varchar" MaxLength="255" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ExportDetail">
+          <Key>
+            <PropertyRef Name="exportID" />
+            <PropertyRef Name="productID" />
+          </Key>
+          <Property Name="exportID" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="productID" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="productName" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="productPrice" Type="int" Nullable="false" />
+          <Property Name="productQuantity" Type="int" Nullable="false" />
+          <Property Name="productOrigin" Type="nvarchar" MaxLength="255" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Import">
+          <Key>
+            <PropertyRef Name="importID" />
+          </Key>
+          <Property Name="importID" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="importTotalProduct" Type="int" />
+          <Property Name="importTotalPrice" Type="int" />
+          <Property Name="importCreated" Type="date" />
+          <Property Name="accountID" Type="varchar" MaxLength="255" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ImportDetail">
+          <Key>
+            <PropertyRef Name="importID" />
+            <PropertyRef Name="productID" />
+          </Key>
+          <Property Name="importID" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="productID" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="productName" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="productPrice" Type="int" Nullable="false" />
+          <Property Name="productQuantity" Type="int" Nullable="false" />
+          <Property Name="productOrigin" Type="nvarchar" MaxLength="255" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PaymentMethod">
+          <Key>
+            <PropertyRef Name="paymentID" />
+          </Key>
+          <Property Name="paymentID" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="paymentName" Type="char" MaxLength="255" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="productID" />
+          </Key>
+          <Property Name="productID" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="productName" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="productPrice" Type="int" Nullable="false" />
+          <Property Name="productQuantity" Type="int" Nullable="false" />
+          <Property Name="productOrigin" Type="nvarchar" MaxLength="255" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Store">
+          <Key>
+            <PropertyRef Name="storeID" />
+          </Key>
+          <Property Name="storeID" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="storeName" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="storeLocation" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="taxValue" Type="int" />
+        </EntityType>
+        <Association Name="FK_Export_Account_accountID">
+          <End Role="Account" Type="Self.Account" Multiplicity="1" />
+          <End Role="Export" Type="Self.Export" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Account">
+              <PropertyRef Name="accountID" />
+            </Principal>
+            <Dependent Role="Export">
+              <PropertyRef Name="accountID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Export_PaymentMethod_paymentID">
+          <End Role="PaymentMethod" Type="Self.PaymentMethod" Multiplicity="1" />
+          <End Role="Export" Type="Self.Export" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PaymentMethod">
+              <PropertyRef Name="paymentID" />
+            </Principal>
+            <Dependent Role="Export">
+              <PropertyRef Name="paymentID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Export_Store_storeID">
+          <End Role="Store" Type="Self.Store" Multiplicity="1" />
+          <End Role="Export" Type="Self.Export" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Store">
+              <PropertyRef Name="storeID" />
+            </Principal>
+            <Dependent Role="Export">
+              <PropertyRef Name="storeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ExportDetail_Export_exportID">
+          <End Role="Export" Type="Self.Export" Multiplicity="1" />
+          <End Role="ExportDetail" Type="Self.ExportDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Export">
+              <PropertyRef Name="exportID" />
+            </Principal>
+            <Dependent Role="ExportDetail">
+              <PropertyRef Name="exportID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ExportDetail_Product_productID">
+          <End Role="Product" Type="Self.Product" Multiplicity="1" />
+          <End Role="ExportDetail" Type="Self.ExportDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="productID" />
+            </Principal>
+            <Dependent Role="ExportDetail">
+              <PropertyRef Name="productID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Import_Account_accountID">
+          <End Role="Account" Type="Self.Account" Multiplicity="1" />
+          <End Role="Import" Type="Self.Import" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Account">
+              <PropertyRef Name="accountID" />
+            </Principal>
+            <Dependent Role="Import">
+              <PropertyRef Name="accountID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ImportDetail_Import_importID">
+          <End Role="Import" Type="Self.Import" Multiplicity="1" />
+          <End Role="ImportDetail" Type="Self.ImportDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Import">
+              <PropertyRef Name="importID" />
+            </Principal>
+            <Dependent Role="ImportDetail">
+              <PropertyRef Name="importID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ImportDetail_Product_productID">
+          <End Role="Product" Type="Self.Product" Multiplicity="1" />
+          <End Role="ImportDetail" Type="Self.ImportDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="productID" />
+            </Principal>
+            <Dependent Role="ImportDetail">
+              <PropertyRef Name="productID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="CNPM_final_projectModelStoreContainer">
+          <EntitySet Name="Account" EntityType="Self.Account" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Export" EntityType="Self.Export" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ExportDetail" EntityType="Self.ExportDetail" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Import" EntityType="Self.Import" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ImportDetail" EntityType="Self.ImportDetail" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PaymentMethod" EntityType="Self.PaymentMethod" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Store" EntityType="Self.Store" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Export_Account_accountID" Association="Self.FK_Export_Account_accountID">
+            <End Role="Account" EntitySet="Account" />
+            <End Role="Export" EntitySet="Export" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Export_PaymentMethod_paymentID" Association="Self.FK_Export_PaymentMethod_paymentID">
+            <End Role="PaymentMethod" EntitySet="PaymentMethod" />
+            <End Role="Export" EntitySet="Export" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Export_Store_storeID" Association="Self.FK_Export_Store_storeID">
+            <End Role="Store" EntitySet="Store" />
+            <End Role="Export" EntitySet="Export" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ExportDetail_Export_exportID" Association="Self.FK_ExportDetail_Export_exportID">
+            <End Role="Export" EntitySet="Export" />
+            <End Role="ExportDetail" EntitySet="ExportDetail" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ExportDetail_Product_productID" Association="Self.FK_ExportDetail_Product_productID">
+            <End Role="Product" EntitySet="Product" />
+            <End Role="ExportDetail" EntitySet="ExportDetail" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Import_Account_accountID" Association="Self.FK_Import_Account_accountID">
+            <End Role="Account" EntitySet="Account" />
+            <End Role="Import" EntitySet="Import" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ImportDetail_Import_importID" Association="Self.FK_ImportDetail_Import_importID">
+            <End Role="Import" EntitySet="Import" />
+            <End Role="ImportDetail" EntitySet="ImportDetail" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ImportDetail_Product_productID" Association="Self.FK_ImportDetail_Product_productID">
+            <End Role="Product" EntitySet="Product" />
+            <End Role="ImportDetail" EntitySet="ImportDetail" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="CNPM_final_projectModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Account">
+          <Key>
+            <PropertyRef Name="accountID" />
+          </Key>
+          <Property Name="accountID" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="accountPassword" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="accountFirstName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="accountLastName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="accountEmail" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="accountPhone" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="accountAddress" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Exports" Relationship="Self.FK_Export_Account_accountID" FromRole="Account" ToRole="Export" />
+          <NavigationProperty Name="Imports" Relationship="Self.FK_Import_Account_accountID" FromRole="Account" ToRole="Import" />
+        </EntityType>
+        <EntityType Name="Export">
+          <Key>
+            <PropertyRef Name="exportID" />
+          </Key>
+          <Property Name="exportID" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="exportTotalProduct" Type="Int32" />
+          <Property Name="exportTotalPrice" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="exportCreated" Type="DateTime" Precision="0" />
+          <Property Name="exportStatus" Type="Int32" />
+          <Property Name="accountID" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="paymentID" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="storeID" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Account" Relationship="Self.FK_Export_Account_accountID" FromRole="Export" ToRole="Account" />
+          <NavigationProperty Name="PaymentMethod" Relationship="Self.FK_Export_PaymentMethod_paymentID" FromRole="Export" ToRole="PaymentMethod" />
+          <NavigationProperty Name="Store" Relationship="Self.FK_Export_Store_storeID" FromRole="Export" ToRole="Store" />
+          <NavigationProperty Name="ExportDetails" Relationship="Self.FK_ExportDetail_Export_exportID" FromRole="Export" ToRole="ExportDetail" />
+        </EntityType>
+        <EntityType Name="ExportDetail">
+          <Key>
+            <PropertyRef Name="exportID" />
+            <PropertyRef Name="productID" />
+          </Key>
+          <Property Name="exportID" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="productID" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="productName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="productPrice" Type="Int32" Nullable="false" />
+          <Property Name="productQuantity" Type="Int32" Nullable="false" />
+          <Property Name="productOrigin" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Export" Relationship="Self.FK_ExportDetail_Export_exportID" FromRole="ExportDetail" ToRole="Export" />
+          <NavigationProperty Name="Product" Relationship="Self.FK_ExportDetail_Product_productID" FromRole="ExportDetail" ToRole="Product" />
+        </EntityType>
+        <EntityType Name="Import">
+          <Key>
+            <PropertyRef Name="importID" />
+          </Key>
+          <Property Name="importID" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="importTotalProduct" Type="Int32" />
+          <Property Name="importTotalPrice" Type="Int32" />
+          <Property Name="importCreated" Type="DateTime" Precision="0" />
+          <Property Name="accountID" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Account" Relationship="Self.FK_Import_Account_accountID" FromRole="Import" ToRole="Account" />
+          <NavigationProperty Name="ImportDetails" Relationship="Self.FK_ImportDetail_Import_importID" FromRole="Import" ToRole="ImportDetail" />
+        </EntityType>
+        <EntityType Name="ImportDetail">
+          <Key>
+            <PropertyRef Name="importID" />
+            <PropertyRef Name="productID" />
+          </Key>
+          <Property Name="importID" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="productID" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="productName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="productPrice" Type="Int32" Nullable="false" />
+          <Property Name="productQuantity" Type="Int32" Nullable="false" />
+          <Property Name="productOrigin" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Import" Relationship="Self.FK_ImportDetail_Import_importID" FromRole="ImportDetail" ToRole="Import" />
+          <NavigationProperty Name="Product" Relationship="Self.FK_ImportDetail_Product_productID" FromRole="ImportDetail" ToRole="Product" />
+        </EntityType>
+        <EntityType Name="PaymentMethod">
+          <Key>
+            <PropertyRef Name="paymentID" />
+          </Key>
+          <Property Name="paymentID" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="paymentName" Type="String" MaxLength="255" FixedLength="true" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Exports" Relationship="Self.FK_Export_PaymentMethod_paymentID" FromRole="PaymentMethod" ToRole="Export" />
+        </EntityType>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="productID" />
+          </Key>
+          <Property Name="productID" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="productName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="productPrice" Type="Int32" Nullable="false" />
+          <Property Name="productQuantity" Type="Int32" Nullable="false" />
+          <Property Name="productOrigin" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="ExportDetails" Relationship="Self.FK_ExportDetail_Product_productID" FromRole="Product" ToRole="ExportDetail" />
+          <NavigationProperty Name="ImportDetails" Relationship="Self.FK_ImportDetail_Product_productID" FromRole="Product" ToRole="ImportDetail" />
+        </EntityType>
+        <EntityType Name="Store">
+          <Key>
+            <PropertyRef Name="storeID" />
+          </Key>
+          <Property Name="storeID" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="storeName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="storeLocation" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="taxValue" Type="Int32" />
+          <NavigationProperty Name="Exports" Relationship="Self.FK_Export_Store_storeID" FromRole="Store" ToRole="Export" />
+        </EntityType>
+        <Association Name="FK_Export_Account_accountID">
+          <End Role="Account" Type="Self.Account" Multiplicity="1" />
+          <End Role="Export" Type="Self.Export" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Account">
+              <PropertyRef Name="accountID" />
+            </Principal>
+            <Dependent Role="Export">
+              <PropertyRef Name="accountID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Import_Account_accountID">
+          <End Role="Account" Type="Self.Account" Multiplicity="1" />
+          <End Role="Import" Type="Self.Import" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Account">
+              <PropertyRef Name="accountID" />
+            </Principal>
+            <Dependent Role="Import">
+              <PropertyRef Name="accountID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Export_PaymentMethod_paymentID">
+          <End Role="PaymentMethod" Type="Self.PaymentMethod" Multiplicity="1" />
+          <End Role="Export" Type="Self.Export" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PaymentMethod">
+              <PropertyRef Name="paymentID" />
+            </Principal>
+            <Dependent Role="Export">
+              <PropertyRef Name="paymentID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Export_Store_storeID">
+          <End Role="Store" Type="Self.Store" Multiplicity="1" />
+          <End Role="Export" Type="Self.Export" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Store">
+              <PropertyRef Name="storeID" />
+            </Principal>
+            <Dependent Role="Export">
+              <PropertyRef Name="storeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ExportDetail_Export_exportID">
+          <End Role="Export" Type="Self.Export" Multiplicity="1" />
+          <End Role="ExportDetail" Type="Self.ExportDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Export">
+              <PropertyRef Name="exportID" />
+            </Principal>
+            <Dependent Role="ExportDetail">
+              <PropertyRef Name="exportID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ExportDetail_Product_productID">
+          <End Role="Product" Type="Self.Product" Multiplicity="1" />
+          <End Role="ExportDetail" Type="Self.ExportDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="productID" />
+            </Principal>
+            <Dependent Role="ExportDetail">
+              <PropertyRef Name="productID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ImportDetail_Import_importID">
+          <End Role="Import" Type="Self.Import" Multiplicity="1" />
+          <End Role="ImportDetail" Type="Self.ImportDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Import">
+              <PropertyRef Name="importID" />
+            </Principal>
+            <Dependent Role="ImportDetail">
+              <PropertyRef Name="importID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ImportDetail_Product_productID">
+          <End Role="Product" Type="Self.Product" Multiplicity="1" />
+          <End Role="ImportDetail" Type="Self.ImportDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="productID" />
+            </Principal>
+            <Dependent Role="ImportDetail">
+              <PropertyRef Name="productID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DevConn" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Accounts" EntityType="Self.Account" />
+          <EntitySet Name="Exports" EntityType="Self.Export" />
+          <EntitySet Name="ExportDetails" EntityType="Self.ExportDetail" />
+          <EntitySet Name="Imports" EntityType="Self.Import" />
+          <EntitySet Name="ImportDetails" EntityType="Self.ImportDetail" />
+          <EntitySet Name="PaymentMethods" EntityType="Self.PaymentMethod" />
+          <EntitySet Name="Products" EntityType="Self.Product" />
+          <EntitySet Name="Stores" EntityType="Self.Store" />
+          <AssociationSet Name="FK_Export_Account_accountID" Association="Self.FK_Export_Account_accountID">
+            <End Role="Account" EntitySet="Accounts" />
+            <End Role="Export" EntitySet="Exports" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Import_Account_accountID" Association="Self.FK_Import_Account_accountID">
+            <End Role="Account" EntitySet="Accounts" />
+            <End Role="Import" EntitySet="Imports" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Export_PaymentMethod_paymentID" Association="Self.FK_Export_PaymentMethod_paymentID">
+            <End Role="PaymentMethod" EntitySet="PaymentMethods" />
+            <End Role="Export" EntitySet="Exports" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Export_Store_storeID" Association="Self.FK_Export_Store_storeID">
+            <End Role="Store" EntitySet="Stores" />
+            <End Role="Export" EntitySet="Exports" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ExportDetail_Export_exportID" Association="Self.FK_ExportDetail_Export_exportID">
+            <End Role="Export" EntitySet="Exports" />
+            <End Role="ExportDetail" EntitySet="ExportDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ExportDetail_Product_productID" Association="Self.FK_ExportDetail_Product_productID">
+            <End Role="Product" EntitySet="Products" />
+            <End Role="ExportDetail" EntitySet="ExportDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ImportDetail_Import_importID" Association="Self.FK_ImportDetail_Import_importID">
+            <End Role="Import" EntitySet="Imports" />
+            <End Role="ImportDetail" EntitySet="ImportDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ImportDetail_Product_productID" Association="Self.FK_ImportDetail_Product_productID">
+            <End Role="Product" EntitySet="Products" />
+            <End Role="ImportDetail" EntitySet="ImportDetails" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="CNPM_final_projectModelStoreContainer" CdmEntityContainer="DevConn">
+          <EntitySetMapping Name="Accounts">
+            <EntityTypeMapping TypeName="CNPM_final_projectModel.Account">
+              <MappingFragment StoreEntitySet="Account">
+                <ScalarProperty Name="accountID" ColumnName="accountID" />
+                <ScalarProperty Name="accountPassword" ColumnName="accountPassword" />
+                <ScalarProperty Name="accountFirstName" ColumnName="accountFirstName" />
+                <ScalarProperty Name="accountLastName" ColumnName="accountLastName" />
+                <ScalarProperty Name="accountEmail" ColumnName="accountEmail" />
+                <ScalarProperty Name="accountPhone" ColumnName="accountPhone" />
+                <ScalarProperty Name="accountAddress" ColumnName="accountAddress" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Exports">
+            <EntityTypeMapping TypeName="CNPM_final_projectModel.Export">
+              <MappingFragment StoreEntitySet="Export">
+                <ScalarProperty Name="exportID" ColumnName="exportID" />
+                <ScalarProperty Name="exportTotalProduct" ColumnName="exportTotalProduct" />
+                <ScalarProperty Name="exportTotalPrice" ColumnName="exportTotalPrice" />
+                <ScalarProperty Name="exportCreated" ColumnName="exportCreated" />
+                <ScalarProperty Name="exportStatus" ColumnName="exportStatus" />
+                <ScalarProperty Name="accountID" ColumnName="accountID" />
+                <ScalarProperty Name="paymentID" ColumnName="paymentID" />
+                <ScalarProperty Name="storeID" ColumnName="storeID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ExportDetails">
+            <EntityTypeMapping TypeName="CNPM_final_projectModel.ExportDetail">
+              <MappingFragment StoreEntitySet="ExportDetail">
+                <ScalarProperty Name="exportID" ColumnName="exportID" />
+                <ScalarProperty Name="productID" ColumnName="productID" />
+                <ScalarProperty Name="productName" ColumnName="productName" />
+                <ScalarProperty Name="productPrice" ColumnName="productPrice" />
+                <ScalarProperty Name="productQuantity" ColumnName="productQuantity" />
+                <ScalarProperty Name="productOrigin" ColumnName="productOrigin" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Imports">
+            <EntityTypeMapping TypeName="CNPM_final_projectModel.Import">
+              <MappingFragment StoreEntitySet="Import">
+                <ScalarProperty Name="importID" ColumnName="importID" />
+                <ScalarProperty Name="importTotalProduct" ColumnName="importTotalProduct" />
+                <ScalarProperty Name="importTotalPrice" ColumnName="importTotalPrice" />
+                <ScalarProperty Name="importCreated" ColumnName="importCreated" />
+                <ScalarProperty Name="accountID" ColumnName="accountID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ImportDetails">
+            <EntityTypeMapping TypeName="CNPM_final_projectModel.ImportDetail">
+              <MappingFragment StoreEntitySet="ImportDetail">
+                <ScalarProperty Name="importID" ColumnName="importID" />
+                <ScalarProperty Name="productID" ColumnName="productID" />
+                <ScalarProperty Name="productName" ColumnName="productName" />
+                <ScalarProperty Name="productPrice" ColumnName="productPrice" />
+                <ScalarProperty Name="productQuantity" ColumnName="productQuantity" />
+                <ScalarProperty Name="productOrigin" ColumnName="productOrigin" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PaymentMethods">
+            <EntityTypeMapping TypeName="CNPM_final_projectModel.PaymentMethod">
+              <MappingFragment StoreEntitySet="PaymentMethod">
+                <ScalarProperty Name="paymentID" ColumnName="paymentID" />
+                <ScalarProperty Name="paymentName" ColumnName="paymentName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Products">
+            <EntityTypeMapping TypeName="CNPM_final_projectModel.Product">
+              <MappingFragment StoreEntitySet="Product">
+                <ScalarProperty Name="productID" ColumnName="productID" />
+                <ScalarProperty Name="productName" ColumnName="productName" />
+                <ScalarProperty Name="productPrice" ColumnName="productPrice" />
+                <ScalarProperty Name="productQuantity" ColumnName="productQuantity" />
+                <ScalarProperty Name="productOrigin" ColumnName="productOrigin" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Stores">
+            <EntityTypeMapping TypeName="CNPM_final_projectModel.Store">
+              <MappingFragment StoreEntitySet="Store">
+                <ScalarProperty Name="storeID" ColumnName="storeID" />
+                <ScalarProperty Name="storeName" ColumnName="storeName" />
+                <ScalarProperty Name="storeLocation" ColumnName="storeLocation" />
+                <ScalarProperty Name="taxValue" ColumnName="taxValue" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

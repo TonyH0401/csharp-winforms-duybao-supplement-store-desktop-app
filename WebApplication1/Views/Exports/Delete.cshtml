@@ -1,0 +1,80 @@
+﻿@model WebApplication1.Models.Export
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Export</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.exportTotalProduct)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.exportTotalProduct)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.exportTotalPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.exportTotalPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.exportCreated)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.exportCreated)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.exportStatus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.exportStatus)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Account.accountPassword)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Account.accountPassword)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PaymentMethod.paymentName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PaymentMethod.paymentName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Store.storeName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Store.storeName)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

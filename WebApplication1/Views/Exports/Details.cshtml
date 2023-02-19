@@ -1,0 +1,74 @@
+﻿@model WebApplication1.Models.Export
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Export</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.exportTotalProduct)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.exportTotalProduct)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.exportTotalPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.exportTotalPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.exportCreated)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.exportCreated)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.exportStatus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.exportStatus)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Account.accountPassword)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Account.accountPassword)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PaymentMethod.paymentName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PaymentMethod.paymentName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Store.storeName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Store.storeName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.exportID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
