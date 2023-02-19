@@ -61,7 +61,10 @@
             this.manageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.storeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.csvExportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.productToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.accountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.storeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -70,6 +73,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.lblDisplay);
             this.panel1.Controls.Add(this.txtbxAccountEmail);
@@ -91,16 +95,16 @@
             this.panel2.Controls.Add(this.lblTime);
             this.panel2.Controls.Add(this.dateTimePickerCurrentTime);
             this.panel2.Controls.Add(this.lblCurrentTime);
-            this.panel2.Location = new System.Drawing.Point(327, 12);
+            this.panel2.Location = new System.Drawing.Point(327, 27);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(239, 141);
+            this.panel2.Size = new System.Drawing.Size(239, 114);
             this.panel2.TabIndex = 9;
             // 
             // lblTime
             // 
             this.lblTime.AutoSize = true;
             this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTime.Location = new System.Drawing.Point(25, 79);
+            this.lblTime.Location = new System.Drawing.Point(25, 56);
             this.lblTime.Name = "lblTime";
             this.lblTime.Size = new System.Drawing.Size(182, 46);
             this.lblTime.TabIndex = 2;
@@ -108,7 +112,7 @@
             // 
             // dateTimePickerCurrentTime
             // 
-            this.dateTimePickerCurrentTime.Location = new System.Drawing.Point(18, 53);
+            this.dateTimePickerCurrentTime.Location = new System.Drawing.Point(18, 30);
             this.dateTimePickerCurrentTime.Name = "dateTimePickerCurrentTime";
             this.dateTimePickerCurrentTime.Size = new System.Drawing.Size(199, 20);
             this.dateTimePickerCurrentTime.TabIndex = 1;
@@ -116,8 +120,9 @@
             // lblCurrentTime
             // 
             this.lblCurrentTime.AutoSize = true;
+            this.lblCurrentTime.BackColor = System.Drawing.Color.White;
             this.lblCurrentTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCurrentTime.Location = new System.Drawing.Point(15, 23);
+            this.lblCurrentTime.Location = new System.Drawing.Point(13, 4);
             this.lblCurrentTime.Name = "lblCurrentTime";
             this.lblCurrentTime.Size = new System.Drawing.Size(83, 13);
             this.lblCurrentTime.TabIndex = 0;
@@ -126,8 +131,9 @@
             // lblDisplay
             // 
             this.lblDisplay.AutoSize = true;
+            this.lblDisplay.BackColor = System.Drawing.Color.White;
             this.lblDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDisplay.Location = new System.Drawing.Point(30, 0);
+            this.lblDisplay.Location = new System.Drawing.Point(30, 2);
             this.lblDisplay.Name = "lblDisplay";
             this.lblDisplay.Size = new System.Drawing.Size(92, 22);
             this.lblDisplay.TabIndex = 8;
@@ -208,9 +214,9 @@
             this.lblWelcome.ForeColor = System.Drawing.Color.SteelBlue;
             this.lblWelcome.Location = new System.Drawing.Point(12, 31);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(759, 31);
+            this.lblWelcome.Size = new System.Drawing.Size(748, 31);
             this.lblWelcome.TabIndex = 9;
-            this.lblWelcome.Text = "WELCOME TO DUYPHU SUPPLYMENT SUPPLIER INC.";
+            this.lblWelcome.Text = "WELCOME TO DUYBAO SUPPLIMENT SUPPLIER INC.";
             // 
             // menuStrip1
             // 
@@ -331,7 +337,7 @@
             this.manageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.productToolStripMenuItem,
             this.storeToolStripMenuItem,
-            this.accountToolStripMenuItem});
+            this.csvExportToolStripMenuItem});
             this.manageToolStripMenuItem.Name = "manageToolStripMenuItem";
             this.manageToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
             this.manageToolStripMenuItem.Text = "Manage";
@@ -341,18 +347,43 @@
             this.productToolStripMenuItem.Name = "productToolStripMenuItem";
             this.productToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.productToolStripMenuItem.Text = "Product";
+            this.productToolStripMenuItem.Click += new System.EventHandler(this.productToolStripMenuItem_Click);
             // 
             // storeToolStripMenuItem
             // 
             this.storeToolStripMenuItem.Name = "storeToolStripMenuItem";
             this.storeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.storeToolStripMenuItem.Text = "Store";
+            this.storeToolStripMenuItem.Click += new System.EventHandler(this.storeToolStripMenuItem_Click);
+            // 
+            // csvExportToolStripMenuItem
+            // 
+            this.csvExportToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.productToolStripMenuItem1,
+            this.accountToolStripMenuItem,
+            this.storeToolStripMenuItem1});
+            this.csvExportToolStripMenuItem.Name = "csvExportToolStripMenuItem";
+            this.csvExportToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.csvExportToolStripMenuItem.Text = "CSV Export";
+            this.csvExportToolStripMenuItem.Click += new System.EventHandler(this.csvExportToolStripMenuItem_Click);
+            // 
+            // productToolStripMenuItem1
+            // 
+            this.productToolStripMenuItem1.Name = "productToolStripMenuItem1";
+            this.productToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.productToolStripMenuItem1.Text = "Product";
             // 
             // accountToolStripMenuItem
             // 
             this.accountToolStripMenuItem.Name = "accountToolStripMenuItem";
             this.accountToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.accountToolStripMenuItem.Text = "Account";
+            // 
+            // storeToolStripMenuItem1
+            // 
+            this.storeToolStripMenuItem1.Name = "storeToolStripMenuItem1";
+            this.storeToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.storeToolStripMenuItem1.Text = "Store";
             // 
             // frmMain
             // 
@@ -413,7 +444,10 @@
         private System.Windows.Forms.ToolStripMenuItem manageToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem productToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem storeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem csvExportToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem productToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem accountToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem storeToolStripMenuItem1;
     }
 }
 

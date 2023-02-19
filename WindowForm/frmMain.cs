@@ -26,7 +26,7 @@ namespace Finals_Project
             getDataFromSessionAccountID();
             //Update the UserAccount handle on the menustrip with AccountID, THIS IS IN THE TIMER FUNCTION
             //because there will be error if we load it here, when on exist from Login
-            this.Text = "Homepage of " + getSessionAccountIDFromProgram();
+            this.Text = "Homepage - " + getSessionAccountIDFromProgram();
         }
         public void initiateComponents()
         {
@@ -174,6 +174,30 @@ namespace Finals_Project
                 return true;
             }
             return false;
+        }
+
+        private void productToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmMProduct f = new frmMProduct();
+            f.Show();
+        }
+
+        private void storeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if(viewProductAuthentication() == true)
+            {
+                frmMStore f = new frmMStore();
+                f.Show();
+            }
+            else
+            {
+                MessageBox.Show("You do not have this level clearance!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void csvExportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
