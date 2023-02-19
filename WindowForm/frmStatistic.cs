@@ -191,7 +191,27 @@ namespace Finals_Project
 
         private void btnVisualize_Click(object sender, EventArgs e)
         {
+            if(dataGridViewImport.Rows.Count == 0)
+            {
+                MessageBox.Show("There are no data to visualize!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            DataTable dtImport = (DataTable)dataGridViewImport.DataSource;
+            DataTable dtExport = (DataTable)dataGridViewExport.DataSource;
 
+            String frmName = dateTimePickerImportExportBill.Text;
+            frmChart f = new frmChart(dtImport, dtExport, "Import", "Export", 300, frmName);
+            f.Show();
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            dataGridViewTopImport.DataSource = null;
+            dataGridViewTopExport.DataSource = null;
+            dataGridViewImport.DataSource = null;
+            dataGridViewExport.DataSource = null;
+
+            dateTimePickerImportExportBill.Value = DateTime.Now;
         }
     }
 }

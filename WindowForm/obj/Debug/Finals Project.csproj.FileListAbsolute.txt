@@ -248,3 +248,4 @@ D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin
 D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\System.Numerics.Vectors.xml
 D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu\Source code\WindowForm\obj\Debug\Finals_Project.frmChart.resources
