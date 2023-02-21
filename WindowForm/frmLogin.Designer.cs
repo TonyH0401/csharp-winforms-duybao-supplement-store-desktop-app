@@ -157,9 +157,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(21, 87);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(204, 31);
+            this.label1.Size = new System.Drawing.Size(203, 31);
             this.label1.TabIndex = 9;
-            this.label1.Text = "DUYPHU INC.";
+            this.label1.Text = "DUYBAO INC.";
             // 
             // label2
             // 

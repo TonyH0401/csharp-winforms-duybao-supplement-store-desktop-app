@@ -93,7 +93,7 @@ namespace Finals_Project
         private void createExportListToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmAddProductExport fCreateExport = new frmAddProductExport();
-            fCreateExport.ShowDialog();
+            fCreateExport.Show();
         }
 
         private void viewImportListToolStripMenuItem_Click(object sender, EventArgs e)
@@ -139,19 +139,7 @@ namespace Finals_Project
             }
             return false;
         }
-        private void viewProductsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            bool authentication = viewProductAuthentication();
-            if(authentication == true)
-            {
-                frmProduct fProduct = new frmProduct();
-                fProduct.Show();
-            }
-            else
-            {
-                MessageBox.Show("You are not allowed!", "WARNING OFF LIMITS", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
+
         private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             try

@@ -45,6 +45,9 @@
             this.lblAccountID = new System.Windows.Forms.Label();
             this.lblWelcome = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.userAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exportImportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exportListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewExportListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -53,18 +56,15 @@
             this.viewImportListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.createImportListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewStatisticToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.viewProductsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.userAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.manageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.storeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.csvExportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.accountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.storeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.accountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -72,9 +72,8 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.BackColor = System.Drawing.Color.LightSkyBlue;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.lblDisplay);
             this.panel1.Controls.Add(this.txtbxAccountEmail);
             this.panel1.Controls.Add(this.lblAccountEmail);
@@ -84,18 +83,19 @@
             this.panel1.Controls.Add(this.lblAccountName);
             this.panel1.Controls.Add(this.txtbxAccountID);
             this.panel1.Controls.Add(this.lblAccountID);
-            this.panel1.Location = new System.Drawing.Point(89, 84);
+            this.panel1.Location = new System.Drawing.Point(29, 88);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(603, 163);
+            this.panel1.Size = new System.Drawing.Size(333, 163);
             this.panel1.TabIndex = 0;
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.GreenYellow;
+            this.panel2.BackColor = System.Drawing.Color.LawnGreen;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.lblTime);
             this.panel2.Controls.Add(this.dateTimePickerCurrentTime);
             this.panel2.Controls.Add(this.lblCurrentTime);
-            this.panel2.Location = new System.Drawing.Point(327, 27);
+            this.panel2.Location = new System.Drawing.Point(455, 111);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(239, 114);
             this.panel2.TabIndex = 9;
@@ -122,7 +122,7 @@
             this.lblCurrentTime.AutoSize = true;
             this.lblCurrentTime.BackColor = System.Drawing.Color.White;
             this.lblCurrentTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCurrentTime.Location = new System.Drawing.Point(13, 4);
+            this.lblCurrentTime.Location = new System.Drawing.Point(76, 7);
             this.lblCurrentTime.Name = "lblCurrentTime";
             this.lblCurrentTime.Size = new System.Drawing.Size(83, 13);
             this.lblCurrentTime.TabIndex = 0;
@@ -132,12 +132,12 @@
             // 
             this.lblDisplay.AutoSize = true;
             this.lblDisplay.BackColor = System.Drawing.Color.White;
-            this.lblDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDisplay.Location = new System.Drawing.Point(30, 2);
+            this.lblDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDisplay.Location = new System.Drawing.Point(19, 4);
             this.lblDisplay.Name = "lblDisplay";
-            this.lblDisplay.Size = new System.Drawing.Size(92, 22);
+            this.lblDisplay.Size = new System.Drawing.Size(285, 17);
             this.lblDisplay.TabIndex = 8;
-            this.lblDisplay.Text = "DISPLAY";
+            this.lblDisplay.Text = "DISPLAY EMPLOYEE\'S INFORMATION";
             // 
             // txtbxAccountEmail
             // 
@@ -210,9 +210,9 @@
             // lblWelcome
             // 
             this.lblWelcome.AutoSize = true;
-            this.lblWelcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWelcome.ForeColor = System.Drawing.Color.SteelBlue;
-            this.lblWelcome.Location = new System.Drawing.Point(12, 31);
+            this.lblWelcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWelcome.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.lblWelcome.Location = new System.Drawing.Point(5, 24);
             this.lblWelcome.Name = "lblWelcome";
             this.lblWelcome.Size = new System.Drawing.Size(748, 31);
             this.lblWelcome.TabIndex = 9;
@@ -224,13 +224,38 @@
             this.userAccountToolStripMenuItem,
             this.exportImportToolStripMenuItem,
             this.viewStatisticToolStripMenuItem,
-            this.viewProductsToolStripMenuItem,
             this.manageToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(784, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(759, 24);
             this.menuStrip1.TabIndex = 10;
             this.menuStrip1.Text = "menuStrip1";
+            // 
+            // userAccountToolStripMenuItem
+            // 
+            this.userAccountToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.exitToolStripMenuItem,
+            this.logoutToolStripMenuItem});
+            this.userAccountToolStripMenuItem.Name = "userAccountToolStripMenuItem";
+            this.userAccountToolStripMenuItem.Size = new System.Drawing.Size(90, 20);
+            this.userAccountToolStripMenuItem.Text = "User Account";
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.BackColor = System.Drawing.Color.Red;
+            this.exitToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.exitToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Text = "&Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // logoutToolStripMenuItem
+            // 
+            this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.logoutToolStripMenuItem.Text = "&Logout";
+            this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
             // 
             // exportImportToolStripMenuItem
             // 
@@ -294,44 +319,6 @@
             this.viewStatisticToolStripMenuItem.Text = "View Statistic";
             this.viewStatisticToolStripMenuItem.Click += new System.EventHandler(this.viewStatisticToolStripMenuItem_Click);
             // 
-            // viewProductsToolStripMenuItem
-            // 
-            this.viewProductsToolStripMenuItem.Name = "viewProductsToolStripMenuItem";
-            this.viewProductsToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
-            this.viewProductsToolStripMenuItem.Text = "View Products";
-            this.viewProductsToolStripMenuItem.Click += new System.EventHandler(this.viewProductsToolStripMenuItem_Click);
-            // 
-            // userAccountToolStripMenuItem
-            // 
-            this.userAccountToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.exitToolStripMenuItem,
-            this.logoutToolStripMenuItem});
-            this.userAccountToolStripMenuItem.Name = "userAccountToolStripMenuItem";
-            this.userAccountToolStripMenuItem.Size = new System.Drawing.Size(90, 20);
-            this.userAccountToolStripMenuItem.Text = "User Account";
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.BackColor = System.Drawing.Color.Red;
-            this.exitToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.exitToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.exitToolStripMenuItem.Text = "&Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
-            // 
-            // logoutToolStripMenuItem
-            // 
-            this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.logoutToolStripMenuItem.Text = "&Logout";
-            this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
-            // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // manageToolStripMenuItem
             // 
             this.manageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -339,8 +326,8 @@
             this.storeToolStripMenuItem,
             this.csvExportToolStripMenuItem});
             this.manageToolStripMenuItem.Name = "manageToolStripMenuItem";
-            this.manageToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
-            this.manageToolStripMenuItem.Text = "Manage";
+            this.manageToolStripMenuItem.Size = new System.Drawing.Size(90, 20);
+            this.manageToolStripMenuItem.Text = "Management";
             // 
             // productToolStripMenuItem
             // 
@@ -373,13 +360,6 @@
             this.productToolStripMenuItem1.Text = "Product";
             this.productToolStripMenuItem1.Click += new System.EventHandler(this.productToolStripMenuItem1_Click);
             // 
-            // accountToolStripMenuItem
-            // 
-            this.accountToolStripMenuItem.Name = "accountToolStripMenuItem";
-            this.accountToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.accountToolStripMenuItem.Text = "Account";
-            this.accountToolStripMenuItem.Click += new System.EventHandler(this.accountToolStripMenuItem_Click);
-            // 
             // storeToolStripMenuItem1
             // 
             this.storeToolStripMenuItem1.Name = "storeToolStripMenuItem1";
@@ -387,11 +367,36 @@
             this.storeToolStripMenuItem1.Text = "Store";
             this.storeToolStripMenuItem1.Click += new System.EventHandler(this.storeToolStripMenuItem1_Click);
             // 
+            // accountToolStripMenuItem
+            // 
+            this.accountToolStripMenuItem.Name = "accountToolStripMenuItem";
+            this.accountToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.accountToolStripMenuItem.Text = "Account";
+            this.accountToolStripMenuItem.Click += new System.EventHandler(this.accountToolStripMenuItem_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.label1.Location = new System.Drawing.Point(312, 55);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(167, 17);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "You order. We deliver";
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 299);
+            this.ClientSize = new System.Drawing.Size(759, 271);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
@@ -441,7 +446,6 @@
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.Label lblTime;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.ToolStripMenuItem viewProductsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem manageToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem productToolStripMenuItem;
@@ -450,6 +454,7 @@
         private System.Windows.Forms.ToolStripMenuItem productToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem accountToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem storeToolStripMenuItem1;
+        private System.Windows.Forms.Label label1;
     }
 }
 

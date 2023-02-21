@@ -153,7 +153,7 @@ namespace Finals_Project
             String name = txtbxName.Text.ToString().Trim();
             String price = txtbxPrice.Text.ToString().Trim();
             String quantity = txtbxQuantity.Text.ToString().Trim();
-            String origin = txtbxOrigin.ToString().Trim();
+            String origin = txtbxOrigin.Text.ToString().Trim();
             if ((id.Length * name.Length * origin.Length * price.Length * quantity.Length != 0))
             {
                 if (productIdExist(id.ToUpper()) == true)

@@ -52,10 +52,10 @@
             this.lblStoreName = new System.Windows.Forms.Label();
             this.cbbxStoreName = new System.Windows.Forms.ComboBox();
             this.lblStoreLocation = new System.Windows.Forms.Label();
-            this.lblProductToImport = new System.Windows.Forms.Label();
             this.txtbxStoreID = new System.Windows.Forms.TextBox();
             this.txtbxStoreLocation = new System.Windows.Forms.TextBox();
             this.lblStoreID = new System.Windows.Forms.Label();
+            this.lblProductToImport = new System.Windows.Forms.Label();
             this.txtbxQuantityToImport = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lblTotal = new System.Windows.Forms.Label();
@@ -64,19 +64,25 @@
             this.lblPaymentMethod = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnCreateExport = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnPreview = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAddedProduct)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // cbbxProductID
             // 
             this.cbbxProductID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbxProductID.FormattingEnabled = true;
-            this.cbbxProductID.Location = new System.Drawing.Point(114, 23);
+            this.cbbxProductID.Location = new System.Drawing.Point(114, 31);
             this.cbbxProductID.Name = "cbbxProductID";
             this.cbbxProductID.Size = new System.Drawing.Size(221, 21);
             this.cbbxProductID.TabIndex = 1;
@@ -85,16 +91,17 @@
             // lblProductName
             // 
             this.lblProductName.AutoSize = true;
-            this.lblProductName.Location = new System.Drawing.Point(5, 23);
+            this.lblProductName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProductName.Location = new System.Drawing.Point(5, 31);
             this.lblProductName.Name = "lblProductName";
-            this.lblProductName.Size = new System.Drawing.Size(75, 13);
+            this.lblProductName.Size = new System.Drawing.Size(87, 13);
             this.lblProductName.TabIndex = 2;
             this.lblProductName.Text = "Product Name";
             // 
             // lblProductPrice
             // 
             this.lblProductPrice.AutoSize = true;
-            this.lblProductPrice.Location = new System.Drawing.Point(5, 88);
+            this.lblProductPrice.Location = new System.Drawing.Point(5, 96);
             this.lblProductPrice.Name = "lblProductPrice";
             this.lblProductPrice.Size = new System.Drawing.Size(71, 13);
             this.lblProductPrice.TabIndex = 3;
@@ -103,7 +110,7 @@
             // lblProductOrigin
             // 
             this.lblProductOrigin.AutoSize = true;
-            this.lblProductOrigin.Location = new System.Drawing.Point(5, 153);
+            this.lblProductOrigin.Location = new System.Drawing.Point(5, 161);
             this.lblProductOrigin.Name = "lblProductOrigin";
             this.lblProductOrigin.Size = new System.Drawing.Size(49, 13);
             this.lblProductOrigin.TabIndex = 5;
@@ -112,7 +119,7 @@
             // lblProductQuantity
             // 
             this.lblProductQuantity.AutoSize = true;
-            this.lblProductQuantity.Location = new System.Drawing.Point(5, 120);
+            this.lblProductQuantity.Location = new System.Drawing.Point(5, 128);
             this.lblProductQuantity.Name = "lblProductQuantity";
             this.lblProductQuantity.Size = new System.Drawing.Size(86, 13);
             this.lblProductQuantity.TabIndex = 4;
@@ -120,28 +127,28 @@
             // 
             // txtbxProductID
             // 
-            this.txtbxProductID.Location = new System.Drawing.Point(114, 58);
+            this.txtbxProductID.Location = new System.Drawing.Point(114, 66);
             this.txtbxProductID.Name = "txtbxProductID";
-            this.txtbxProductID.Size = new System.Drawing.Size(79, 20);
+            this.txtbxProductID.Size = new System.Drawing.Size(96, 20);
             this.txtbxProductID.TabIndex = 6;
             // 
             // txtbxProductPrice
             // 
-            this.txtbxProductPrice.Location = new System.Drawing.Point(114, 88);
+            this.txtbxProductPrice.Location = new System.Drawing.Point(114, 96);
             this.txtbxProductPrice.Name = "txtbxProductPrice";
-            this.txtbxProductPrice.Size = new System.Drawing.Size(79, 20);
+            this.txtbxProductPrice.Size = new System.Drawing.Size(45, 20);
             this.txtbxProductPrice.TabIndex = 7;
             // 
             // txtbxOrigin
             // 
-            this.txtbxOrigin.Location = new System.Drawing.Point(114, 153);
+            this.txtbxOrigin.Location = new System.Drawing.Point(114, 161);
             this.txtbxOrigin.Name = "txtbxOrigin";
             this.txtbxOrigin.Size = new System.Drawing.Size(151, 20);
             this.txtbxOrigin.TabIndex = 9;
             // 
             // txtbxProductQuantity
             // 
-            this.txtbxProductQuantity.Location = new System.Drawing.Point(114, 120);
+            this.txtbxProductQuantity.Location = new System.Drawing.Point(114, 128);
             this.txtbxProductQuantity.Name = "txtbxProductQuantity";
             this.txtbxProductQuantity.Size = new System.Drawing.Size(79, 20);
             this.txtbxProductQuantity.TabIndex = 8;
@@ -149,7 +156,7 @@
             // lblProductID
             // 
             this.lblProductID.AutoSize = true;
-            this.lblProductID.Location = new System.Drawing.Point(5, 58);
+            this.lblProductID.Location = new System.Drawing.Point(5, 66);
             this.lblProductID.Name = "lblProductID";
             this.lblProductID.Size = new System.Drawing.Size(58, 13);
             this.lblProductID.TabIndex = 10;
@@ -160,11 +167,11 @@
             this.dataGridViewAddedProduct.AllowUserToAddRows = false;
             this.dataGridViewAddedProduct.AllowUserToDeleteRows = false;
             this.dataGridViewAddedProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewAddedProduct.Location = new System.Drawing.Point(365, 8);
+            this.dataGridViewAddedProduct.Location = new System.Drawing.Point(20, 28);
             this.dataGridViewAddedProduct.Name = "dataGridViewAddedProduct";
             this.dataGridViewAddedProduct.ReadOnly = true;
             this.dataGridViewAddedProduct.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewAddedProduct.Size = new System.Drawing.Size(649, 376);
+            this.dataGridViewAddedProduct.Size = new System.Drawing.Size(495, 333);
             this.dataGridViewAddedProduct.TabIndex = 11;
             this.dataGridViewAddedProduct.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewAddedProduct_CellContentClick);
             // 
@@ -182,7 +189,8 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.panel1.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.lblDisplay);
             this.panel1.Controls.Add(this.lblProductName);
             this.panel1.Controls.Add(this.cbbxProductID);
@@ -194,20 +202,21 @@
             this.panel1.Controls.Add(this.lblProductID);
             this.panel1.Controls.Add(this.txtbxProductQuantity);
             this.panel1.Controls.Add(this.txtbxOrigin);
-            this.panel1.Location = new System.Drawing.Point(9, 198);
+            this.panel1.Location = new System.Drawing.Point(9, 236);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(344, 186);
+            this.panel1.Size = new System.Drawing.Size(344, 191);
             this.panel1.TabIndex = 13;
             // 
             // lblDisplay
             // 
             this.lblDisplay.AutoSize = true;
+            this.lblDisplay.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lblDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDisplay.Location = new System.Drawing.Point(21, -3);
+            this.lblDisplay.Location = new System.Drawing.Point(76, -1);
             this.lblDisplay.Name = "lblDisplay";
-            this.lblDisplay.Size = new System.Drawing.Size(133, 15);
+            this.lblDisplay.Size = new System.Drawing.Size(193, 15);
             this.lblDisplay.TabIndex = 18;
-            this.lblDisplay.Text = "Product Information";
+            this.lblDisplay.Text = "Selected Product Information";
             // 
             // btnDelete
             // 
@@ -238,17 +247,18 @@
             // lblADDPROD
             // 
             this.lblADDPROD.AutoSize = true;
-            this.lblADDPROD.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblADDPROD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.lblADDPROD.Location = new System.Drawing.Point(36, 16);
+            this.lblADDPROD.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblADDPROD.ForeColor = System.Drawing.Color.DarkOrange;
+            this.lblADDPROD.Location = new System.Drawing.Point(290, 24);
             this.lblADDPROD.Name = "lblADDPROD";
-            this.lblADDPROD.Size = new System.Drawing.Size(299, 25);
+            this.lblADDPROD.Size = new System.Drawing.Size(356, 29);
             this.lblADDPROD.TabIndex = 17;
             this.lblADDPROD.Text = "ADD PRODUCT TO EXPORT";
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.SpringGreen;
+            this.panel2.BackColor = System.Drawing.Color.NavajoWhite;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.lblSessionUser);
             this.panel2.Controls.Add(this.txtbxSessionUser);
             this.panel2.Controls.Add(this.lblProductChoose);
@@ -258,16 +268,16 @@
             this.panel2.Controls.Add(this.txtbxStoreID);
             this.panel2.Controls.Add(this.txtbxStoreLocation);
             this.panel2.Controls.Add(this.lblStoreID);
-            this.panel2.Location = new System.Drawing.Point(9, 44);
+            this.panel2.Location = new System.Drawing.Point(9, 65);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(344, 143);
+            this.panel2.Size = new System.Drawing.Size(344, 160);
             this.panel2.TabIndex = 19;
             // 
             // lblSessionUser
             // 
             this.lblSessionUser.AutoSize = true;
             this.lblSessionUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSessionUser.Location = new System.Drawing.Point(5, 18);
+            this.lblSessionUser.Location = new System.Drawing.Point(5, 32);
             this.lblSessionUser.Name = "lblSessionUser";
             this.lblSessionUser.Size = new System.Drawing.Size(99, 13);
             this.lblSessionUser.TabIndex = 19;
@@ -275,7 +285,7 @@
             // 
             // txtbxSessionUser
             // 
-            this.txtbxSessionUser.Location = new System.Drawing.Point(114, 18);
+            this.txtbxSessionUser.Location = new System.Drawing.Point(114, 32);
             this.txtbxSessionUser.Name = "txtbxSessionUser";
             this.txtbxSessionUser.Size = new System.Drawing.Size(96, 20);
             this.txtbxSessionUser.TabIndex = 20;
@@ -283,8 +293,9 @@
             // lblProductChoose
             // 
             this.lblProductChoose.AutoSize = true;
+            this.lblProductChoose.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lblProductChoose.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProductChoose.Location = new System.Drawing.Point(21, -3);
+            this.lblProductChoose.Location = new System.Drawing.Point(98, 0);
             this.lblProductChoose.Name = "lblProductChoose";
             this.lblProductChoose.Size = new System.Drawing.Size(144, 15);
             this.lblProductChoose.TabIndex = 18;
@@ -293,7 +304,7 @@
             // lblStoreName
             // 
             this.lblStoreName.AutoSize = true;
-            this.lblStoreName.Location = new System.Drawing.Point(5, 48);
+            this.lblStoreName.Location = new System.Drawing.Point(5, 62);
             this.lblStoreName.Name = "lblStoreName";
             this.lblStoreName.Size = new System.Drawing.Size(63, 13);
             this.lblStoreName.TabIndex = 2;
@@ -303,7 +314,7 @@
             // 
             this.cbbxStoreName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbxStoreName.FormattingEnabled = true;
-            this.cbbxStoreName.Location = new System.Drawing.Point(114, 48);
+            this.cbbxStoreName.Location = new System.Drawing.Point(114, 62);
             this.cbbxStoreName.Name = "cbbxStoreName";
             this.cbbxStoreName.Size = new System.Drawing.Size(221, 21);
             this.cbbxStoreName.TabIndex = 1;
@@ -312,32 +323,22 @@
             // lblStoreLocation
             // 
             this.lblStoreLocation.AutoSize = true;
-            this.lblStoreLocation.Location = new System.Drawing.Point(5, 113);
+            this.lblStoreLocation.Location = new System.Drawing.Point(5, 127);
             this.lblStoreLocation.Name = "lblStoreLocation";
             this.lblStoreLocation.Size = new System.Drawing.Size(76, 13);
             this.lblStoreLocation.TabIndex = 3;
             this.lblStoreLocation.Text = "Store Location";
             // 
-            // lblProductToImport
-            // 
-            this.lblProductToImport.AutoSize = true;
-            this.lblProductToImport.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProductToImport.Location = new System.Drawing.Point(5, 12);
-            this.lblProductToImport.Name = "lblProductToImport";
-            this.lblProductToImport.Size = new System.Drawing.Size(157, 13);
-            this.lblProductToImport.TabIndex = 4;
-            this.lblProductToImport.Text = "Product Quantity to Export";
-            // 
             // txtbxStoreID
             // 
-            this.txtbxStoreID.Location = new System.Drawing.Point(114, 83);
+            this.txtbxStoreID.Location = new System.Drawing.Point(114, 97);
             this.txtbxStoreID.Name = "txtbxStoreID";
             this.txtbxStoreID.Size = new System.Drawing.Size(79, 20);
             this.txtbxStoreID.TabIndex = 6;
             // 
             // txtbxStoreLocation
             // 
-            this.txtbxStoreLocation.Location = new System.Drawing.Point(114, 113);
+            this.txtbxStoreLocation.Location = new System.Drawing.Point(114, 127);
             this.txtbxStoreLocation.Name = "txtbxStoreLocation";
             this.txtbxStoreLocation.Size = new System.Drawing.Size(221, 20);
             this.txtbxStoreLocation.TabIndex = 7;
@@ -345,15 +346,26 @@
             // lblStoreID
             // 
             this.lblStoreID.AutoSize = true;
-            this.lblStoreID.Location = new System.Drawing.Point(5, 83);
+            this.lblStoreID.Location = new System.Drawing.Point(5, 97);
             this.lblStoreID.Name = "lblStoreID";
             this.lblStoreID.Size = new System.Drawing.Size(46, 13);
             this.lblStoreID.TabIndex = 10;
             this.lblStoreID.Text = "Store ID";
             // 
+            // lblProductToImport
+            // 
+            this.lblProductToImport.AutoSize = true;
+            this.lblProductToImport.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.lblProductToImport.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProductToImport.Location = new System.Drawing.Point(5, 12);
+            this.lblProductToImport.Name = "lblProductToImport";
+            this.lblProductToImport.Size = new System.Drawing.Size(157, 13);
+            this.lblProductToImport.TabIndex = 4;
+            this.lblProductToImport.Text = "Product Quantity to Export";
+            // 
             // txtbxQuantityToImport
             // 
-            this.txtbxQuantityToImport.Location = new System.Drawing.Point(168, 9);
+            this.txtbxQuantityToImport.Location = new System.Drawing.Point(186, 9);
             this.txtbxQuantityToImport.Name = "txtbxQuantityToImport";
             this.txtbxQuantityToImport.Size = new System.Drawing.Size(79, 20);
             this.txtbxQuantityToImport.TabIndex = 8;
@@ -361,12 +373,13 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Silver;
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.lblProductToImport);
             this.panel3.Controls.Add(this.txtbxQuantityToImport);
             this.panel3.Controls.Add(this.btnAdd);
             this.panel3.Controls.Add(this.btnReset);
             this.panel3.Controls.Add(this.btnDelete);
-            this.panel3.Location = new System.Drawing.Point(9, 397);
+            this.panel3.Location = new System.Drawing.Point(9, 439);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(344, 91);
             this.panel3.TabIndex = 20;
@@ -375,7 +388,7 @@
             // 
             this.lblTotal.AutoSize = true;
             this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotal.Location = new System.Drawing.Point(3, 12);
+            this.lblTotal.Location = new System.Drawing.Point(3, 11);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(65, 13);
             this.lblTotal.TabIndex = 21;
@@ -383,7 +396,7 @@
             // 
             // txtbxTotalCost
             // 
-            this.txtbxTotalCost.Location = new System.Drawing.Point(110, 9);
+            this.txtbxTotalCost.Location = new System.Drawing.Point(110, 11);
             this.txtbxTotalCost.Name = "txtbxTotalCost";
             this.txtbxTotalCost.Size = new System.Drawing.Size(107, 20);
             this.txtbxTotalCost.TabIndex = 22;
@@ -392,7 +405,7 @@
             // 
             this.cbbxPaymentMethod.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbxPaymentMethod.FormattingEnabled = true;
-            this.cbbxPaymentMethod.Location = new System.Drawing.Point(110, 53);
+            this.cbbxPaymentMethod.Location = new System.Drawing.Point(110, 40);
             this.cbbxPaymentMethod.Name = "cbbxPaymentMethod";
             this.cbbxPaymentMethod.Size = new System.Drawing.Size(107, 21);
             this.cbbxPaymentMethod.TabIndex = 21;
@@ -401,7 +414,7 @@
             // 
             this.lblPaymentMethod.AutoSize = true;
             this.lblPaymentMethod.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPaymentMethod.Location = new System.Drawing.Point(3, 56);
+            this.lblPaymentMethod.Location = new System.Drawing.Point(3, 40);
             this.lblPaymentMethod.Name = "lblPaymentMethod";
             this.lblPaymentMethod.Size = new System.Drawing.Size(101, 13);
             this.lblPaymentMethod.TabIndex = 23;
@@ -409,57 +422,96 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.RosyBrown;
+            this.panel4.BackColor = System.Drawing.Color.HotPink;
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.lblTotal);
             this.panel4.Controls.Add(this.lblPaymentMethod);
             this.panel4.Controls.Add(this.txtbxTotalCost);
             this.panel4.Controls.Add(this.cbbxPaymentMethod);
-            this.panel4.Location = new System.Drawing.Point(488, 406);
+            this.panel4.Location = new System.Drawing.Point(20, 383);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(229, 80);
+            this.panel4.Size = new System.Drawing.Size(229, 71);
             this.panel4.TabIndex = 24;
             // 
             // btnCreateExport
             // 
             this.btnCreateExport.BackColor = System.Drawing.Color.Green;
-            this.btnCreateExport.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCreateExport.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreateExport.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCreateExport.Location = new System.Drawing.Point(751, 409);
+            this.btnCreateExport.Location = new System.Drawing.Point(328, 386);
             this.btnCreateExport.Name = "btnCreateExport";
-            this.btnCreateExport.Size = new System.Drawing.Size(239, 41);
+            this.btnCreateExport.Size = new System.Drawing.Size(133, 41);
             this.btnCreateExport.TabIndex = 25;
             this.btnCreateExport.Text = "Create Export Bill";
             this.btnCreateExport.UseVisualStyleBackColor = false;
             this.btnCreateExport.Click += new System.EventHandler(this.btnCreateExport_Click);
             // 
-            // btnExit
+            // menuStrip1
             // 
-            this.btnExit.BackColor = System.Drawing.Color.Crimson;
-            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnExit.Location = new System.Drawing.Point(842, 465);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(75, 23);
-            this.btnExit.TabIndex = 26;
-            this.btnExit.Text = "Exit";
-            this.btnExit.UseVisualStyleBackColor = false;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.exitToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(914, 24);
+            this.menuStrip1.TabIndex = 27;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
+            this.exitToolStripMenuItem.Text = "&Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.LightPink;
+            this.panel6.Controls.Add(this.btnPreview);
+            this.panel6.Controls.Add(this.label1);
+            this.panel6.Controls.Add(this.btnCreateExport);
+            this.panel6.Controls.Add(this.panel4);
+            this.panel6.Controls.Add(this.dataGridViewAddedProduct);
+            this.panel6.Location = new System.Drawing.Point(371, 66);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(531, 463);
+            this.panel6.TabIndex = 29;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(168, 2);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(198, 15);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "Current Product Selection List";
+            // 
+            // btnPreview
+            // 
+            this.btnPreview.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPreview.Location = new System.Drawing.Point(358, 431);
+            this.btnPreview.Name = "btnPreview";
+            this.btnPreview.Size = new System.Drawing.Size(75, 23);
+            this.btnPreview.TabIndex = 26;
+            this.btnPreview.Text = "Preview";
+            this.btnPreview.UseVisualStyleBackColor = true;
+            this.btnPreview.Click += new System.EventHandler(this.btnPreview_Click);
             // 
             // frmAddProductExport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Tan;
-            this.ClientSize = new System.Drawing.Size(1024, 514);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(914, 541);
             this.ControlBox = false;
-            this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.btnCreateExport);
-            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.lblADDPROD);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.dataGridViewAddedProduct);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmAddProductExport";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmAddProductExport";
@@ -473,6 +525,10 @@
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -516,6 +572,10 @@
         private System.Windows.Forms.Label lblPaymentMethod;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button btnCreateExport;
-        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnPreview;
     }
 }

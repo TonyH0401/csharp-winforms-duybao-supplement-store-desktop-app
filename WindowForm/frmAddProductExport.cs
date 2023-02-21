@@ -459,7 +459,7 @@ namespace Finals_Project
             this.dataGridViewAddedProduct.DataSource = null;
             this.dataGridViewAddedProduct.Rows.Clear();
             //re-load
-            this.frmAddProductImport_Load(null, EventArgs.Empty);
+            this.frmAddProductImport_Load(sender, e);
         }
         //done
         public int getExportBillCounter()
@@ -601,15 +601,6 @@ namespace Finals_Project
                 }
             }
         }
-        //done
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            DialogResult dt = MessageBox.Show("Do you want to Exit", "System Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-            if (dt == DialogResult.Yes)
-            {
-                this.Close();
-            }
-        }
         //TESTING AREA FUNCTIONS
         public String getStoreTaxMethod(String storeID, String strConn) 
         {
@@ -675,6 +666,20 @@ namespace Finals_Project
             {
                 return -1;
             }
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult dt = MessageBox.Show("Do you want to exit?", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dt == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
+
+        private void btnPreview_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
