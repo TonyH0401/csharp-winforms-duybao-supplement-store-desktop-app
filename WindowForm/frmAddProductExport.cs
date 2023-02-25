@@ -8,6 +8,7 @@ using System.Globalization;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -677,9 +678,42 @@ namespace Finals_Project
             }
         }
 
+        public List<Product> convertDataGridToListProduct(DataGridView inputData)
+        {
+            List<Product> result = new List<Product>();
+            foreach (DataGridViewRow row in inputData.Rows)
+            {
+                Product product = new Product();
+                product.id = row.Cells[0].Value.ToString();
+                product.name = row.Cells[1].Value.ToString();
+                product.price = row.Cells[2].Value.ToString();
+                product.quantity = row.Cells[3].Value.ToString();
+                product.origin = row.Cells[4].Value.ToString();
+                result.Add(product);
+            }
+            return result;
+        }
+
         private void btnPreview_Click(object sender, EventArgs e)
         {
+            if(dataGridViewAddedProduct.Rows.Count == 0)
+            {
+                MessageBox.Show("No preview available!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
+            List<Product> dataSourceProduct = convertDataGridToListProduct(dataGridViewAddedProduct);
+            String exportID = getExportBillID();
+            String storeID = txtbxStoreID.Text.ToString().Trim();
+            String accountID = txtbxSessionUser.Text.ToString().Trim();
+            String paymentMethod = cbbxPaymentMethod.SelectedValue.ToString();
+            String exportStatus = "(preview)";
+            String date = DateTime.Now.ToString().Trim();
+            String totalPrice = txtbxTotalCost.Text.ToString().Trim();
+            String totalQuantity = dataGridViewAddedProduct.Rows.Count.ToString().Trim();
+
+            frmPrintExport f = new frmPrintExport(dataSourceProduct, exportID, storeID, accountID, paymentMethod, exportStatus, date, totalPrice, totalQuantity);
+            f.ShowDialog();
         }
     }
 }
