@@ -67,8 +67,10 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.btnPreview = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtbxPercentDis = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAddedProduct)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -259,6 +261,8 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.NavajoWhite;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.txtbxPercentDis);
             this.panel2.Controls.Add(this.lblSessionUser);
             this.panel2.Controls.Add(this.txtbxSessionUser);
             this.panel2.Controls.Add(this.lblProductChoose);
@@ -476,6 +480,17 @@
             this.panel6.Size = new System.Drawing.Size(531, 463);
             this.panel6.TabIndex = 29;
             // 
+            // btnPreview
+            // 
+            this.btnPreview.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPreview.Location = new System.Drawing.Point(358, 431);
+            this.btnPreview.Name = "btnPreview";
+            this.btnPreview.Size = new System.Drawing.Size(75, 23);
+            this.btnPreview.TabIndex = 26;
+            this.btnPreview.Text = "Preview";
+            this.btnPreview.UseVisualStyleBackColor = true;
+            this.btnPreview.Click += new System.EventHandler(this.btnPreview_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -487,16 +502,22 @@
             this.label1.TabIndex = 21;
             this.label1.Text = "Current Product Selection List";
             // 
-            // btnPreview
+            // txtbxPercentDis
             // 
-            this.btnPreview.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPreview.Location = new System.Drawing.Point(358, 431);
-            this.btnPreview.Name = "btnPreview";
-            this.btnPreview.Size = new System.Drawing.Size(75, 23);
-            this.btnPreview.TabIndex = 26;
-            this.btnPreview.Text = "Preview";
-            this.btnPreview.UseVisualStyleBackColor = true;
-            this.btnPreview.Click += new System.EventHandler(this.btnPreview_Click);
+            this.txtbxPercentDis.Location = new System.Drawing.Point(256, 97);
+            this.txtbxPercentDis.Name = "txtbxPercentDis";
+            this.txtbxPercentDis.Size = new System.Drawing.Size(79, 20);
+            this.txtbxPercentDis.TabIndex = 21;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(215, 100);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(38, 13);
+            this.label2.TabIndex = 22;
+            this.label2.Text = "% Dis";
             // 
             // frmAddProductExport
             // 
@@ -577,5 +598,7 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnPreview;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtbxPercentDis;
     }
 }

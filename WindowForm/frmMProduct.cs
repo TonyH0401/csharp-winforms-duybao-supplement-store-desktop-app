@@ -285,12 +285,12 @@ namespace Finals_Project
             String origin = txtbxOrigin.Text.ToString().Trim();
             if ((id.Length * name.Length * origin.Length * price.Length * quantity.Length != 0))
             {
-                if (productIdExist(id.ToUpper()) == true)
-                {
-                    MessageBox.Show("Product ID existed", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-                if (id.Length < 10 || id.Length > 10)
+                //if (productIdExist(id.ToUpper()) == true)
+                //{
+                //    MessageBox.Show("Product ID existed", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //    return;
+                //}
+                if (id.Length > 20)
                 {
                     MessageBox.Show("Invalid ProductID", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;

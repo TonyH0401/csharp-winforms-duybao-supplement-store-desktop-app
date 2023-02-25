@@ -20,7 +20,7 @@ insert into Account values ('STRMNGR2', '123','Hồ', 'Huy', 'hovanhuy@gmail.com
 insert into Account values ('EMP1', '123','Lê', 'Hoàng', 'levanhoang@gmail.com','333-222-333','123 Nguyễn Văn Cừ, F.4, Q.4, Đà Năng')
 insert into Account values ('EMP2', '123','Lee', 'Jason', 'jasonhlee@gmail.com','333-222-333','123 Nguyễn Văn Cừ, F.4, Q.4, Đà Năng')
 insert into Account values ('EMP3', '123','Hoàng', 'Hiệp', 'hoangnghiahiep@gmail.com','333-222-333','123 Nguyễn Văn Cừ, F.4, Q.4, Đà Năng')
-insert into Account values ('admin', 'admin','admin','admin','admin','admin','TPHCM')
+insert into Account values ('admin', 'admin','admin','admin','admin@admin.com','admin','TPHCM')
 --select * from Account
 
 create table Product (

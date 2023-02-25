@@ -30,10 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.lblTime = new System.Windows.Forms.Label();
-            this.dateTimePickerCurrentTime = new System.Windows.Forms.DateTimePicker();
-            this.lblCurrentTime = new System.Windows.Forms.Label();
             this.lblDisplay = new System.Windows.Forms.Label();
             this.txtbxAccountEmail = new System.Windows.Forms.TextBox();
             this.lblAccountEmail = new System.Windows.Forms.Label();
@@ -43,6 +39,10 @@
             this.lblAccountName = new System.Windows.Forms.Label();
             this.txtbxAccountID = new System.Windows.Forms.TextBox();
             this.lblAccountID = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lblTime = new System.Windows.Forms.Label();
+            this.dateTimePickerCurrentTime = new System.Windows.Forms.DateTimePicker();
+            this.lblCurrentTime = new System.Windows.Forms.Label();
             this.lblWelcome = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.userAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -88,6 +88,85 @@
             this.panel1.Size = new System.Drawing.Size(333, 163);
             this.panel1.TabIndex = 0;
             // 
+            // lblDisplay
+            // 
+            this.lblDisplay.AutoSize = true;
+            this.lblDisplay.BackColor = System.Drawing.Color.White;
+            this.lblDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDisplay.Location = new System.Drawing.Point(19, 4);
+            this.lblDisplay.Name = "lblDisplay";
+            this.lblDisplay.Size = new System.Drawing.Size(285, 17);
+            this.lblDisplay.TabIndex = 8;
+            this.lblDisplay.Text = "DISPLAY EMPLOYEE\'S INFORMATION";
+            // 
+            // txtbxAccountEmail
+            // 
+            this.txtbxAccountEmail.Location = new System.Drawing.Point(135, 124);
+            this.txtbxAccountEmail.Name = "txtbxAccountEmail";
+            this.txtbxAccountEmail.Size = new System.Drawing.Size(152, 20);
+            this.txtbxAccountEmail.TabIndex = 7;
+            // 
+            // lblAccountEmail
+            // 
+            this.lblAccountEmail.AutoSize = true;
+            this.lblAccountEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAccountEmail.Location = new System.Drawing.Point(31, 124);
+            this.lblAccountEmail.Name = "lblAccountEmail";
+            this.lblAccountEmail.Size = new System.Drawing.Size(92, 13);
+            this.lblAccountEmail.TabIndex = 6;
+            this.lblAccountEmail.Text = "Account Email:";
+            // 
+            // txtbxAccountPhone
+            // 
+            this.txtbxAccountPhone.Location = new System.Drawing.Point(135, 96);
+            this.txtbxAccountPhone.Name = "txtbxAccountPhone";
+            this.txtbxAccountPhone.Size = new System.Drawing.Size(114, 20);
+            this.txtbxAccountPhone.TabIndex = 5;
+            // 
+            // lblAccountPhone
+            // 
+            this.lblAccountPhone.AutoSize = true;
+            this.lblAccountPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAccountPhone.Location = new System.Drawing.Point(31, 96);
+            this.lblAccountPhone.Name = "lblAccountPhone";
+            this.lblAccountPhone.Size = new System.Drawing.Size(98, 13);
+            this.lblAccountPhone.TabIndex = 4;
+            this.lblAccountPhone.Text = "Account Phone:";
+            // 
+            // txtbxAccountName
+            // 
+            this.txtbxAccountName.Location = new System.Drawing.Point(135, 65);
+            this.txtbxAccountName.Name = "txtbxAccountName";
+            this.txtbxAccountName.Size = new System.Drawing.Size(128, 20);
+            this.txtbxAccountName.TabIndex = 3;
+            // 
+            // lblAccountName
+            // 
+            this.lblAccountName.AutoSize = true;
+            this.lblAccountName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAccountName.Location = new System.Drawing.Point(31, 65);
+            this.lblAccountName.Name = "lblAccountName";
+            this.lblAccountName.Size = new System.Drawing.Size(94, 13);
+            this.lblAccountName.TabIndex = 2;
+            this.lblAccountName.Text = "Account Name:";
+            // 
+            // txtbxAccountID
+            // 
+            this.txtbxAccountID.Location = new System.Drawing.Point(135, 35);
+            this.txtbxAccountID.Name = "txtbxAccountID";
+            this.txtbxAccountID.Size = new System.Drawing.Size(152, 20);
+            this.txtbxAccountID.TabIndex = 1;
+            // 
+            // lblAccountID
+            // 
+            this.lblAccountID.AutoSize = true;
+            this.lblAccountID.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAccountID.Location = new System.Drawing.Point(31, 35);
+            this.lblAccountID.Name = "lblAccountID";
+            this.lblAccountID.Size = new System.Drawing.Size(75, 13);
+            this.lblAccountID.TabIndex = 0;
+            this.lblAccountID.Text = "Account ID:";
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.LawnGreen;
@@ -128,85 +207,6 @@
             this.lblCurrentTime.TabIndex = 0;
             this.lblCurrentTime.Text = "Current Time:";
             // 
-            // lblDisplay
-            // 
-            this.lblDisplay.AutoSize = true;
-            this.lblDisplay.BackColor = System.Drawing.Color.White;
-            this.lblDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDisplay.Location = new System.Drawing.Point(19, 4);
-            this.lblDisplay.Name = "lblDisplay";
-            this.lblDisplay.Size = new System.Drawing.Size(285, 17);
-            this.lblDisplay.TabIndex = 8;
-            this.lblDisplay.Text = "DISPLAY EMPLOYEE\'S INFORMATION";
-            // 
-            // txtbxAccountEmail
-            // 
-            this.txtbxAccountEmail.Location = new System.Drawing.Point(135, 124);
-            this.txtbxAccountEmail.Name = "txtbxAccountEmail";
-            this.txtbxAccountEmail.Size = new System.Drawing.Size(152, 20);
-            this.txtbxAccountEmail.TabIndex = 7;
-            // 
-            // lblAccountEmail
-            // 
-            this.lblAccountEmail.AutoSize = true;
-            this.lblAccountEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAccountEmail.Location = new System.Drawing.Point(31, 124);
-            this.lblAccountEmail.Name = "lblAccountEmail";
-            this.lblAccountEmail.Size = new System.Drawing.Size(92, 13);
-            this.lblAccountEmail.TabIndex = 6;
-            this.lblAccountEmail.Text = "Account Email:";
-            // 
-            // txtbxAccountPhone
-            // 
-            this.txtbxAccountPhone.Location = new System.Drawing.Point(135, 96);
-            this.txtbxAccountPhone.Name = "txtbxAccountPhone";
-            this.txtbxAccountPhone.Size = new System.Drawing.Size(152, 20);
-            this.txtbxAccountPhone.TabIndex = 5;
-            // 
-            // lblAccountPhone
-            // 
-            this.lblAccountPhone.AutoSize = true;
-            this.lblAccountPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAccountPhone.Location = new System.Drawing.Point(31, 96);
-            this.lblAccountPhone.Name = "lblAccountPhone";
-            this.lblAccountPhone.Size = new System.Drawing.Size(98, 13);
-            this.lblAccountPhone.TabIndex = 4;
-            this.lblAccountPhone.Text = "Account Phone:";
-            // 
-            // txtbxAccountName
-            // 
-            this.txtbxAccountName.Location = new System.Drawing.Point(135, 65);
-            this.txtbxAccountName.Name = "txtbxAccountName";
-            this.txtbxAccountName.Size = new System.Drawing.Size(152, 20);
-            this.txtbxAccountName.TabIndex = 3;
-            // 
-            // lblAccountName
-            // 
-            this.lblAccountName.AutoSize = true;
-            this.lblAccountName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAccountName.Location = new System.Drawing.Point(31, 65);
-            this.lblAccountName.Name = "lblAccountName";
-            this.lblAccountName.Size = new System.Drawing.Size(94, 13);
-            this.lblAccountName.TabIndex = 2;
-            this.lblAccountName.Text = "Account Name:";
-            // 
-            // txtbxAccountID
-            // 
-            this.txtbxAccountID.Location = new System.Drawing.Point(135, 35);
-            this.txtbxAccountID.Name = "txtbxAccountID";
-            this.txtbxAccountID.Size = new System.Drawing.Size(152, 20);
-            this.txtbxAccountID.TabIndex = 1;
-            // 
-            // lblAccountID
-            // 
-            this.lblAccountID.AutoSize = true;
-            this.lblAccountID.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAccountID.Location = new System.Drawing.Point(31, 35);
-            this.lblAccountID.Name = "lblAccountID";
-            this.lblAccountID.Size = new System.Drawing.Size(75, 13);
-            this.lblAccountID.TabIndex = 0;
-            this.lblAccountID.Text = "Account ID:";
-            // 
             // lblWelcome
             // 
             this.lblWelcome.AutoSize = true;
@@ -246,14 +246,14 @@
             this.exitToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.exitToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.exitToolStripMenuItem.Text = "&Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // logoutToolStripMenuItem
             // 
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.logoutToolStripMenuItem.Text = "&Logout";
             this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
             // 
@@ -272,20 +272,20 @@
             this.viewExportListToolStripMenuItem,
             this.createExportListToolStripMenuItem});
             this.exportListToolStripMenuItem.Name = "exportListToolStripMenuItem";
-            this.exportListToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exportListToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
             this.exportListToolStripMenuItem.Text = "Export List";
             // 
             // viewExportListToolStripMenuItem
             // 
             this.viewExportListToolStripMenuItem.Name = "viewExportListToolStripMenuItem";
-            this.viewExportListToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.viewExportListToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.viewExportListToolStripMenuItem.Text = "View Export List";
             this.viewExportListToolStripMenuItem.Click += new System.EventHandler(this.viewExportListToolStripMenuItem_Click);
             // 
             // createExportListToolStripMenuItem
             // 
             this.createExportListToolStripMenuItem.Name = "createExportListToolStripMenuItem";
-            this.createExportListToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.createExportListToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.createExportListToolStripMenuItem.Text = "Create Export List";
             this.createExportListToolStripMenuItem.Click += new System.EventHandler(this.createExportListToolStripMenuItem_Click);
             // 
@@ -295,20 +295,20 @@
             this.viewImportListToolStripMenuItem,
             this.createImportListToolStripMenuItem});
             this.importListToolStripMenuItem.Name = "importListToolStripMenuItem";
-            this.importListToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.importListToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
             this.importListToolStripMenuItem.Text = "Import List";
             // 
             // viewImportListToolStripMenuItem
             // 
             this.viewImportListToolStripMenuItem.Name = "viewImportListToolStripMenuItem";
-            this.viewImportListToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.viewImportListToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.viewImportListToolStripMenuItem.Text = "View Import List";
             this.viewImportListToolStripMenuItem.Click += new System.EventHandler(this.viewImportListToolStripMenuItem_Click);
             // 
             // createImportListToolStripMenuItem
             // 
             this.createImportListToolStripMenuItem.Name = "createImportListToolStripMenuItem";
-            this.createImportListToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.createImportListToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.createImportListToolStripMenuItem.Text = "Create Import List";
             this.createImportListToolStripMenuItem.Click += new System.EventHandler(this.createImportListToolStripMenuItem_Click);
             // 
@@ -332,14 +332,14 @@
             // productToolStripMenuItem
             // 
             this.productToolStripMenuItem.Name = "productToolStripMenuItem";
-            this.productToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.productToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.productToolStripMenuItem.Text = "Product";
             this.productToolStripMenuItem.Click += new System.EventHandler(this.productToolStripMenuItem_Click);
             // 
             // storeToolStripMenuItem
             // 
             this.storeToolStripMenuItem.Name = "storeToolStripMenuItem";
-            this.storeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.storeToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.storeToolStripMenuItem.Text = "Store";
             this.storeToolStripMenuItem.Click += new System.EventHandler(this.storeToolStripMenuItem_Click);
             // 
@@ -350,27 +350,27 @@
             this.storeToolStripMenuItem1,
             this.accountToolStripMenuItem});
             this.csvExportToolStripMenuItem.Name = "csvExportToolStripMenuItem";
-            this.csvExportToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.csvExportToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.csvExportToolStripMenuItem.Text = "CSV Export";
             // 
             // productToolStripMenuItem1
             // 
             this.productToolStripMenuItem1.Name = "productToolStripMenuItem1";
-            this.productToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.productToolStripMenuItem1.Size = new System.Drawing.Size(119, 22);
             this.productToolStripMenuItem1.Text = "Product";
             this.productToolStripMenuItem1.Click += new System.EventHandler(this.productToolStripMenuItem1_Click);
             // 
             // storeToolStripMenuItem1
             // 
             this.storeToolStripMenuItem1.Name = "storeToolStripMenuItem1";
-            this.storeToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.storeToolStripMenuItem1.Size = new System.Drawing.Size(119, 22);
             this.storeToolStripMenuItem1.Text = "Store";
             this.storeToolStripMenuItem1.Click += new System.EventHandler(this.storeToolStripMenuItem1_Click);
             // 
             // accountToolStripMenuItem
             // 
             this.accountToolStripMenuItem.Name = "accountToolStripMenuItem";
-            this.accountToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.accountToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.accountToolStripMenuItem.Text = "Account";
             this.accountToolStripMenuItem.Click += new System.EventHandler(this.accountToolStripMenuItem_Click);
             // 

@@ -269,12 +269,12 @@ namespace Finals_Project
             String tax = txtbxTax.Text.ToString().Trim();
             if ((id.Length * name.Length * location.Length * tax.Length != 0))
             {
-                if (storeIdExist(id.ToUpper()) == true)
-                {
-                    MessageBox.Show("Store ID existed", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-                if (id.Length > 10)
+                //if (storeIdExist(id.ToUpper()) == true)
+                //{
+                //    MessageBox.Show("Store ID existed", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //    return;
+                //}
+                if (id.Length > 20)
                 {
                     MessageBox.Show("Invalid StoreID", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;

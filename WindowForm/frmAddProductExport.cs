@@ -273,6 +273,7 @@ namespace Finals_Project
             {
                 txtbxStoreID.Text = (String)dt.Rows[0][0];
                 txtbxStoreLocation.Text = (String) dt.Rows[0][2].ToString().Trim();
+                txtbxPercentDis.Text = (String) dt.Rows[0][3].ToString().Trim();
                 //enable add button
                 btnAdd.Enabled = (txtbxStoreID.Text.Equals("") == true) ? false : true;
                 //enable cbbxProduct

@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -601,6 +602,52 @@ namespace Finals_Project
                 }
                 //need to add question do you want to keep importing
             }
+        }
+
+        public List<Product> convertDataGridToListProduct(DataGridView inputData)
+        {
+            List<Product> result = new List<Product>();
+            foreach (DataGridViewRow row in inputData.Rows)
+            {
+                Product product = new Product();
+                product.id = row.Cells[0].Value.ToString();
+                product.name = row.Cells[1].Value.ToString();
+                product.price = row.Cells[2].Value.ToString();
+                product.quantity = row.Cells[3].Value.ToString();
+                product.origin = row.Cells[4].Value.ToString();
+                result.Add(product);
+            }
+            return result;
+        }
+
+        private double getTotalPriceDataGridView()
+        {
+            double result = 0;
+            foreach(DataGridViewRow row in dataGridViewImportProduct.Rows)
+            {
+                double temp = double.Parse(row.Cells[5].Value.ToString());
+                result = result + temp;
+            }
+            return result;
+        }
+
+        private void btnPreview_Click(object sender, EventArgs e)
+        {
+            if (dataGridViewImportProduct.Rows.Count == 0)
+            {
+                MessageBox.Show("No preview available!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            List<Product> dataSourceProduct = convertDataGridToListProduct(dataGridViewImportProduct);
+            String total_price = getTotalPriceDataGridView().ToString();
+            String quantity = dataGridViewImportProduct.Rows.Count.ToString();
+            String import_id = createImportBillID();
+            String date = DateTime.Now.ToString();
+            String session_account = sessionAccount;
+
+            frmPrint f = new frmPrint(dataSourceProduct, total_price, quantity, import_id, date, sessionAccount);
+            f.ShowDialog();
         }
     }
 }

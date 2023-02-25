@@ -66,6 +66,7 @@
             this.lblAccount = new System.Windows.Forms.Label();
             this.lblAccountPhone = new System.Windows.Forms.Label();
             this.btnCreate = new System.Windows.Forms.Button();
+            this.btnPreview = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -328,7 +329,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(16, 232);
+            this.btnAdd.Location = new System.Drawing.Point(16, 223);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 23);
             this.btnAdd.TabIndex = 20;
@@ -349,7 +350,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(111, 232);
+            this.btnDelete.Location = new System.Drawing.Point(111, 223);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 23);
             this.btnDelete.TabIndex = 22;
@@ -362,7 +363,7 @@
             this.btnClose.BackColor = System.Drawing.Color.Red;
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnClose.Location = new System.Drawing.Point(111, 281);
+            this.btnClose.Location = new System.Drawing.Point(111, 256);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(75, 23);
             this.btnClose.TabIndex = 24;
@@ -372,7 +373,7 @@
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(16, 281);
+            this.btnClear.Location = new System.Drawing.Point(16, 256);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(75, 23);
             this.btnClear.TabIndex = 23;
@@ -431,7 +432,7 @@
             this.btnCreate.BackColor = System.Drawing.Color.Green;
             this.btnCreate.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreate.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCreate.Location = new System.Drawing.Point(27, 336);
+            this.btnCreate.Location = new System.Drawing.Point(27, 344);
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Size = new System.Drawing.Size(146, 53);
             this.btnCreate.TabIndex = 26;
@@ -439,12 +440,24 @@
             this.btnCreate.UseVisualStyleBackColor = false;
             this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
+            // btnPreview
+            // 
+            this.btnPreview.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPreview.Location = new System.Drawing.Point(64, 305);
+            this.btnPreview.Name = "btnPreview";
+            this.btnPreview.Size = new System.Drawing.Size(75, 23);
+            this.btnPreview.TabIndex = 27;
+            this.btnPreview.Text = "Preview";
+            this.btnPreview.UseVisualStyleBackColor = true;
+            this.btnPreview.Click += new System.EventHandler(this.btnPreview_Click);
+            // 
             // frmCreateImport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(804, 401);
             this.ControlBox = false;
+            this.Controls.Add(this.btnPreview);
             this.Controls.Add(this.btnCreate);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.btnClose);
@@ -512,5 +525,6 @@
         private System.Windows.Forms.TextBox txtsessionAccount;
         private System.Windows.Forms.Label lblAccountPhone;
         private System.Windows.Forms.Button btnCreate;
+        private System.Windows.Forms.Button btnPreview;
     }
 }
