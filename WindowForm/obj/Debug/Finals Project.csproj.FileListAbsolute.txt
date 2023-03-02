@@ -341,3 +341,4 @@ D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu_520H0516_TranLeGiaBao\Sour
 D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu_520H0516_TranLeGiaBao\Source code\WindowForm\obj\Debug\Finals Project.csproj.CopyComplete
 D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu_520H0516_TranLeGiaBao\Source code\WindowForm\obj\Debug\Finals Project.exe
 D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu_520H0516_TranLeGiaBao\Source code\WindowForm\obj\Debug\Finals Project.pdb
+D:\1.TDTU\5.NET Technology\4.Finals\520H0401_LeGiaPhu_520H0516_TranLeGiaBao\Source code\WindowForm\obj\Debug\Finals_Project.frmMAccount.resources
